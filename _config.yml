@@ -4,35 +4,30 @@ remote_theme: wet-boew/gcweb-jekyll
 title: "GCWeb, the Canada.ca official theme" # Site name or title
 global:
   lang: en
- 
- 
-  applicationName:
-    en: "My application"
-    fr: "Mon application"
+  minifiedSuffix: ".min" 
   applicationURL:
     en: "#"
     fr: "#"
 
-#
 # Page front matter defaults
 defaults:
   - scope:
       path: "" # Ensure it's applied to all pages
     values:
       layout: default
-
-#
-# Collections
-collections:
-  wetboew-demos:
-    output: true
+      pageclass: oag-theme cnt-wdth-lmtd
+      lang: en
+  - scope:
+      path: "ajax"
+    values:
+      layout: null
 
 #
 # Jekyll settings
 timezone: America/Toronto # Timezone for blog posts and alike
-sass:
-  sass_dir: "sites"
 
+include:
+  - assets
 
 #
 # Files excluded from Jekyll builds
@@ -42,16 +37,17 @@ exclude:
 - CONTRIBUTING.md
 - LICENSE*
 - SECURITY.md
-- Gruntfile.coffee
+- Gruntfile.js
 - CNAME
 - "*.tmp"
 - Gemfile
 - Gemfile.lock
 - gcweb-jekyll.gemspec
-- .jekyll-cache
 - node_modules
-- vendor/bundle/
-- vendor/cache/
-- vendor/gems/
-- vendor/ruby/
-- ~sites/
+- package.json
+- package-lock.json
+- .gitignore
+- .gitmodules
+- postcss.config.js
+- npm-debug.log
+- dist

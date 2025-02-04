@@ -1,21 +1,8 @@
-{%- if page.pageclass == "oag-theme" -%}
-    <!-- Content specific to "oag-theme" -->
-    <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-        <a href="{{ setting-website }}" property="url">
-            <img class="img-responsive" src="../../src/assets/logo-full-inverted-transparent.png" alt="OAG" property="logo" /><span class="wb-inv"> / OAG</span>
-        </a>
-        <meta property="name" content="{{ i18nText-goc }}">
-        <meta property="areaServed" typeof="Country" content="Canada" />
-        <link property="logo" href="{{ setting-resourcesBasePathTheme }}/assets/wmms-blk.svg" />
-    </div>
-{%- else -%}
-    <!-- Content for canada.ca pages -->
-    <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-        <a href="{{ setting-website }}" property="url">
-            <img src="{{ setting-resourcesBasePathTheme }}/{{ i18nText-sigBlk }}" alt="{{ i18nText-goc }}" property="logo" /><span class="wb-inv"> / {{ i18nText-gocAltLang }}</span>
-        </a>
-        <meta property="name" content="{{ i18nText-goc }}">
-        <meta property="areaServed" typeof="Country" content="Canada" />
-        <link property="logo" href="{{ setting-resourcesBasePathTheme }}/assets/wmms-blk.svg" />
-    </div>
-{%- endif -%}
+<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+	<a href="{{ setting-website }}" property="url">
+		<img src="{{ i18nText-sigBlk }}" alt="{{ i18nText-goc }}" property="logo" /><span class="wb-inv"> / {{ i18nText-gocAltLang }}</span>
+	</a>
+	<meta property="name" content="{{ i18nText-goc }}">
+	<meta property="areaServed" typeof="Country" content="Canada" />
+	<link property="logo" href="assets/wmms-blk.svg" />
+</div>

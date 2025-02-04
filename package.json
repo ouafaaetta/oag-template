@@ -2,26 +2,33 @@
 	"name": "oag-template",
 	"version": "1.0.0",
 	"private": true,
-	"description": "OAG template using Jekyll website and GCWeb theme",
+	"description": "OAG template using GCWeb-Jekyll",
 	"main": "index.html",
 	"scripts": {
-		"lint:css": "stylelint '**/*.css'",
-		"format:js": "prettier --write '**/*.js'"
- 
-	},
-	"dependencies": {
-		"bootstrap-sass": "3.4.1",
-		"@wet-boew/gcweb": "^11.0.0"
+		"build-css": "postcss assets/oag.css --use postcss-nested -o dist/oag.min.css"
 	},
 	"devDependencies": {
-	  "autoprefixer": "^10.4.14",
-	  "postcss-cli": "^10.1.0",
-	  "stylelint": "^15.10.3",
-	  "prettier": "^3.0.3"
+		"autoprefixer": "^10.4.20",
+		"cssnano": "^7.0.6",
+		"grunt": "^1.6.1",
+		"grunt-contrib-clean": "^2.0.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-postcss": "^0.9.0",
+		"load-grunt-tasks": "^5.1.0",
+		"postcss": "^8.5.2",
+		"postcss-cli": "^10.1.0",
+		"postcss-custom-properties": "^14.0.4",
+		"postcss-nested": "^7.0.2"
 	},
 	"browserslist": [
-	  "defaults",
-	  "not IE 11"
+		"defaults",
+		"not IE 11",
+		"last 2 versions",
+		"not dead",
+		"Safari >= 10",
+		"Chrome >= 60",
+		"Edge >= 16",
+		"Firefox >= 60"
 	],
 	"license": "MIT"
-  }
+}
