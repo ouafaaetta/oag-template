@@ -1,0 +1,57 @@
+{%- capture termsUrl -%}
+	{%- if page.termsUrl -%}
+		{{ page.termsUrl }}
+	{%- elsif site.global.termsUrl[i18nText-lang] -%}
+		{{ site.global.termsUrl[i18nText-lang] }}
+	{%- else -%}
+		{{ i18nText-termsUrl }}
+	{%- endif -%}
+{%- endcapture -%}
+
+{%- capture privacyUrl -%}
+	{%- if page.privacyUrl -%}
+		{{ page.privacyUrl }}
+	{%- elsif site.global.privacyUrl[i18nText-lang] -%}
+		{{ site.global.privacyUrl[i18nText-lang] }}
+	{%- else -%}
+		{{ i18nText-privacyUrl }}
+	{%- endif -%}
+{%- endcapture -%}
+
+{% unless page.noFooterMain or layout.noFooterMain %}
+<footer id="wb-info">
+	<h2 class="wb-inv">{{ i18nText-footerSite }}</h2>	
+	<div class="gc-main-footer">
+		<div class="container">
+			<div class="row wb-eqht">
+				<div class="col-xs-12 col-sm-7 col-md-8 hght-inhrt">
+					<nav>
+						<h3 class="wb-inv">{{ i18nText-goc }}</h3>
+						<ul class="colcount-sm-2 colcount-md-3 list-unstyled">
+							{%- if i18nText-lang == "fr" -%}
+							<li><a href="#">Contactez-nous</a></li>
+							<li><a href="#">Opportunités actuelles</a></li>
+							<li><a href="#">Transparence</a></li>
+							<li><a href="#">Commentaires</a></li>
+							<li><a href="#">Conditions générales</a></li>
+							<li><a href="#">Confidentialité</a></li>
+							{%- elsif i18nText-lang == "en" -%}
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Current opportunities</a></li>
+							<li><a href="#">Transparency</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="{{termsUrl}}">Terms and conditions</a></li>
+							<li><a href="{{privacyUrl}}">Privacy</a></li>
+							{%- endif -%}
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-4 pt-3 hght-inhrt">
+					<img class="img-responsive oag-footer-logo" src="{{ i18nText-wmmsImg }}"
+						alt="{{ i18nText-wmms }}" />
+				</div>
+			</div>
+		</div>
+	</div>	
+</footer>
+{% endunless %}

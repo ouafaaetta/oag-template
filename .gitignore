@@ -1,16 +1,10 @@
 # Jekyll-specific files
 _site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
 
 # Node.js dependencies
 node_modules/
-yarn.lock
 
 # Build artifacts
-dist/
-lib/
 sprite*.*css
 sprite*.png
 
@@ -37,6 +31,7 @@ ethumbs.db
 *.tmp
 *.pid
 *.seed
+GemFile.lock
 
 # Environment and secrets
 .env
