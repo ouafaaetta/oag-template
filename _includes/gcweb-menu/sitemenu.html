@@ -1,23 +1,116 @@
+{%- include variable-core.liquid -%}
+
 <nav class="gcweb-menu" typeof="SiteNavigationElement">
 	<h2 class="wb-inv">{{ i18nText-menu }}</h2>
-	<button type="button" aria-haspopup="true" aria-expanded="false">{{ i18nText-menuBtn }} <span
-			class="expicon glyphicon glyphicon-chevron-down"></span></button>
-	<ul role="menu" aria-orientation="vertical" data-ajax-replace="ajax/sitemenu-en.html">
-		{%- if i18nText-lang == "fr" -%}
-		<li role="presentation"><a role="menuitem" href="#">À propos de nous</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Publications</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Voyage et tourisme</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Ressources</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Salle de médias</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Carrières</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Contactez-nous</a></li>
-		{%- elsif i18nText-lang == "en" -%}
-		<li role="presentation"><a role="menuitem" href="#">About Us</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Publications</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Resources</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Media Room</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Careers</a></li>
-		<li role="presentation"><a role="menuitem" href="#">Contact Us</a></li>
+	<button type="button" aria-haspopup="true" aria-expanded="false">{{ i18nText-menuBtn }}<span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+	<ul role="menu" aria-orientation="vertical">
+		{%- if page.language == "fr" -%}
+		<li role="presentation" class="nojs-show"> <a role="menuitem" tabindex="-1" href="/about-us">À propos de nous</a></li>
+		<li role="presentation" class="nojs-hide"> <a role="menuitem" tabindex="-1" aria-controls="gc-mnu-about-us" aria-haspopup="true" aria-expanded="false" href="#">À propos de nous</a>
+			<ul id="gc-mnu-about-us" role="menu" aria-orientation="vertical">
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/about-us">À propos de nous<span class="visible-xs-inline visible-sm-inline">: accueil</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_370.html">Qui nous sommes</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_371.html">Ce que nous faisons</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_39450.html">Ce que nous ne faisons pas</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/sds_fs_e_920.html">Développement durable</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/pd_fs_e_944.html">Transparence</a></li>
+			</ul>
+		</li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/publications">Publications</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-publications" aria-haspopup="true" aria-expanded="false">Publications</a>
+			<ul id="gc-mnu-publications" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="publications">Publications<span class="visible-xs-inline visible-sm-inline">: accueil</span></a></li>	
+				<li role="separator"></li>		
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_fs_e_43614.html">Contexte sur la COVID-19</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_lp_e_856.html">Rapports au Parlement</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/nla_fs_e_857.html">Rapports aux Assemblées législatives du Nord</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_39466.html">Rapports aux sociétés d'État</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/oth_lp_e_19702.html">Recherche et autres produits</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.oag-bvg.gc.ca/internet/ag-measures/index.html">Suivi concernant des audits antérieurs</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_fs_e_29401.html">Rapports à venir</a></li>
+			</ul>
+		</li>
+		<li role="presentation"><a class="text-underline" role="menuitem" tabindex="0" href="/internet/English/au_fs_e_44184.html">Salle des médias</a></li>
+		<li role="presentation"><a class="text-underline" role="menuitem" tabindex="0" href="/internet/English/med_fs_e_45.html">Salle des médias</a></li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/careers">Travailler avec nous</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-careers" aria-haspopup="true" aria-expanded="false">Travailler avec nous</a>
+			<ul id="gc-mnu-careers" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/careers">Travailler avec nous<span class="visible-xs-inline visible-sm-inline">: accueil</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://oag-bvg.mua.hrdepartment.com/hr/ats/JobSearch/viewAll?change_user_language=1">Recherche d'emploi</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_43560.html">Notre culture</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42302.html">Avantages et récompenses</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42303.html">Faites avancer votre carrière</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42304.html">Étudiants et récent diplômés</a></li>
+			</ul>
+		</li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/contact-us">Contactez-nous</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-contact" aria-haspopup="true" aria-expanded="false">Contactez-nous</a>
+			<ul id="gc-mnu-contact" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/contact-us">Contactez-nous<span class="visible-xs-inline visible-sm-inline">: accueil</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43119.html">Demandes de renseignements</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/pet_fs_e_919.html">Pétitions environnementales</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43990.html">Divulgations d'actes répréhensibles par les fonctionnaires fédéraux</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43119.html#ATIP">Accès à l’information et protection des renseignements personnels</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.oag-bvg.gc.ca/internet/English/web-inquiry.html">Contexte sur la COVID-19</a></li>
+			</ul>
+		</li>
+		{%- elsif page.language == "en" -%}
+		<li role="presentation" class="nojs-show"> <a role="menuitem" tabindex="-1" href="/about-us">About us</a></li>
+		<li role="presentation" class="nojs-hide"> <a role="menuitem" tabindex="-1" aria-controls="gc-mnu-about-us" aria-haspopup="true" aria-expanded="false" href="#">About us</a>
+			<ul id="gc-mnu-about-us" role="menu" aria-orientation="vertical">
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/about-us">About us<span class="visible-xs-inline visible-sm-inline">: home</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_370.html">Who We Are</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_371.html">What We Do</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_39450.html">What We Don't Do</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/sds_fs_e_920.html">Sustainable	Development</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/pd_fs_e_944.html">Transparency</a></li>
+			</ul>
+		</li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/publications">Publications</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-publications" aria-haspopup="true" aria-expanded="false">Publications</a>
+			<ul id="gc-mnu-publications" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="publications">Publications<span class="visible-xs-inline visible-sm-inline">: home</span></a></li>	
+				<li role="separator"></li>		
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_fs_e_43614.html">COVID-19 Background</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_lp_e_856.html">Reports to Parliament</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/nla_fs_e_857.html">Reports to	Nortyhern Legislative Assemblies</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_39466.html">Reports to Crown Corporations</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/oth_lp_e_19702.html">Research and Other Products</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.oag-bvg.gc.ca/internet/ag-measures/index.html">Update on Past Audits</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/parl_fs_e_29401.html">Planned	Reports</a></li>
+			</ul>
+		</li>
+		<li role="presentation"><a class="text-underline" role="menuitem" tabindex="0" href="/internet/English/au_fs_e_44184.html">Resources</a></li>
+		<li role="presentation"><a class="text-underline" role="menuitem" tabindex="0" href="/internet/English/med_fs_e_45.html">Media Room</a></li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/careers">Careers</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-careers" aria-haspopup="true" aria-expanded="false">Careers</a>
+			<ul id="gc-mnu-careers" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/careers">Careers<span class="visible-xs-inline visible-sm-inline">: home</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://oag-bvg.mua.hrdepartment.com/hr/ats/JobSearch/viewAll?change_user_language=1">Current Opportunities</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42290.html">Work With	Us</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_43560.html">Our Culture</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42302.html">Benefits and Rewards</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42303.html">Propel Your Career</a></li>
+				<li role="presentation"> <a role="menuitem" tabindex="-1" href="/internet/English/au_fs_e_42304.html">Students and Recent Graduates</a></li>
+			</ul>
+		</li>
+		<li role="presentation" class="nojs-show"><a role="menuitem" tabindex="-1" href="/contact-us">Contact Us</a>
+		<li role="presentation" class="nojs-hide"><a role="menuitem" tabindex="-1" href="#" aria-controls="gc-mnu-contact" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+			<ul id="gc-mnu-contact" role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/contact-us">Contact Us<span class="visible-xs-inline visible-sm-inline">: home</span></a></li>
+				<li role="separator"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43119.html">Inquiries</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/pet_fs_e_919.html">Environmental Petitions</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43990.html">Wrongdoing disclosures from federal employees</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/internet/English/admin_e_43119.html#ATIP">ATIP Requests</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.oag-bvg.gc.ca/internet/English/web-inquiry.html">COVID-19 Audits Feedback</a></li>
+			</ul>
+		</li>
 		{%- endif -%}
 	</ul>
 </nav>
