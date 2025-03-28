@@ -15,7 +15,7 @@
 {%- assign i18nText-wmmsImg = "assets/OAG-Logo-EN_first-White.svg" -%}
 {% assign i18nText-sigBlk = "assets/OAG-Logo-EN_first-Black.svg" %}
 
-{%- if i18nText-lang == "fr" -%}
+{%- if page.language == "fr" -%}
 
 	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/internet/Francais/admin_f_41.html" %}
 	{% assign i18nText-goc = "Bureau du vérificateur général du Canada" %}
@@ -28,7 +28,8 @@
 	{% assign i18nText-gocCorporate = "Organisation du Bureau du vérificateur général du Canada" %}
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/fr/transparence/avis.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/fr/transparence/confidentialite.html" %}
-{%- elsif i18nText-lang == "en" -%}
+	{% assign i18nText-altLanguage = "English" %}
+{%- elsif page.language == "en" -%}
 
 	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/en.html" %}
 	{% assign i18nText-goc = "Office of the Auditor General of Canada" %}
@@ -41,5 +42,5 @@
 	{% assign i18nText-gocCorporate = "Office of the Auditor General of Canada Corporate" %}
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/en/transparency/terms.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/en/transparency/privacy.html" %}
-
+	{% assign i18nText-altLanguage = "Français" %}
 {%- endif -%}
