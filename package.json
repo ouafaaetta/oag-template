@@ -1,12 +1,8 @@
 {
 	"name": "oag-template",
 	"version": "1.0.0",
-	"private": true,
 	"description": "OAG template using GCWeb-Jekyll",
-	"main": "index.html",
-	"scripts": {
-		"build-css": "postcss assets/oag.css --use postcss-nested -o dist/oag.min.css"
-	},
+	"main": "index.html",	
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
 		"cssnano": "^7.0.6",
