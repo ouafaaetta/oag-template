@@ -13,34 +13,39 @@
 {%- assign i18nText-siteTitle = "Office of the Auditor General of Canada" -%}
 {%- assign i18nText-home = "Home" -%}
 {%- assign i18nText-wmmsImg = "assets/OAG-Logo-EN_first-White.svg" -%}
-{% assign i18nText-sigBlk = "assets/OAG-Logo-EN_first-Black.svg" %}
 
 {%- if page.language == "fr" -%}
 
 	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/internet/Francais/admin_f_41.html" %}
-	{% assign i18nText-goc = "Bureau du vérificateur général du Canada" %}
-	{% assign i18nText-gocAltLang = '<span lang="en">Office of the Auditor General of Canada</span>' %}
+	{% assign i18nText-soag-header = "Bureau du vérificateur général du Canada" %}
+	{% assign i18nText-soag-headerAltLang = '<span lang="en">Office of the Auditor General of Canada</span>' %}
 	{% assign i18nText-searchSite = "Rechercher dans oag-bvg.gc.ca" %}
 	{% assign i18nText-menuAjax = "https://www.canada.ca/content/dam/oag/sitemenu/sitemenu-v2-fr.html" %}
 	{% assign i18nText-feedbackLink = "https://www.oag-bvg.gc.ca/fr/signaler-probleme.html" %}
-	{% assign i18nText-wmms = "Symbole du Bureau du vérificateur général du Canada" %}
-	{% assign i18nText-wmmsAltLang = "<span lang="en">Symbol of the Office of the Auditor General of Canada</span>" %}
-	{% assign i18nText-gocCorporate = "Organisation du Bureau du vérificateur général du Canada" %}
+	{% assign i18nText-soag-footerAltLang = "<span lang="en">Symbol of the Office of the Auditor General of Canada</span>" %}
+	{% assign i18nText-soag-headerCorporate = "Organisation du Bureau du vérificateur général du Canada" %}
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/fr/transparence/avis.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/fr/transparence/confidentialite.html" %}
 	{% assign i18nText-altLanguage = "English" %}
+	{% assign i18nText-soag-header-img = "assets/soag-header-fr.svg" %}
+	{% assign i18nText-soag-footer-img = "assets/soag-footer-fr.svg" %}	
+	{% assign i18nText-soag-footer = "Symbole du Bureau du vérificateur général du Canada" %}	
+
 {%- elsif page.language == "en" -%}
 
 	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/en.html" %}
-	{% assign i18nText-goc = "Office of the Auditor General of Canada" %}
-	{% assign i18nText-gocAltLang = '<span lang="fr">Bureau du vérificateur général du Canada</span>' %}
+	{% assign i18nText-soag-header = "Office of the Auditor General of Canada" %}
+	{% assign i18nText-soag-headerAltLang = '<span lang="fr">Bureau du vérificateur général du Canada</span>' %}
 	{% assign i18nText-searchSite = "Search oag-bvg.gc.ca" %}
 	{% assign i18nText-menuAjax = "https://www.canada.ca/content/dam/oag/sitemenu/sitemenu-v2-en.html" %}
 	{% assign i18nText-feedbackLink = "https://www.oag-bvg.gc.ca/en/report-problem.html" %}
-	{% assign i18nText-wmms = "Symbol of the Office of the Auditor General of Canada" %}
-	{% assign i18nText-wmmsAltLang = "<span lang="fr">Symbole du Bureau du vérificateur général du Canada</span>" %}
-	{% assign i18nText-gocCorporate = "Office of the Auditor General of Canada Corporate" %}
+	{% assign i18nText-soag-footerAltLang = "<span lang="fr">Symbole du Bureau du vérificateur général du Canada</span>" %}
+	{% assign i18nText-soag-headerCorporate = "Office of the Auditor General of Canada Corporate" %}
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/en/transparency/terms.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/en/transparency/privacy.html" %}
 	{% assign i18nText-altLanguage = "Français" %}
+	{% assign i18nText-soag-header-img = "assets/soag-header-en.svg" %}
+	{% assign i18nText-soag-footer-img = "assets/soag-footer-en.svg" %}	
+	{% assign i18nText-soag-footer = "Symbol of the Office of the Auditor General of Canada" %}
+	
 {%- endif -%}

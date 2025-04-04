@@ -16,7 +16,28 @@ module.exports = function(grunt) {
 				src: ['*.svg'],
 				dest: 'dist/'
 			}
-		}
+		},
+		uglify: {
+            dist: {
+                files: {
+                    'dist/oag.min.js': ['assets/oag.js']
+                }
+            }
+        },
+		usebanner: {
+			taskName: {
+				options: {
+					position: 'top',
+					banner: '/*!\n * @title OAG template \n' +
+					' * @license https://github.com/ServiceCanada/oag-template/?tab=MIT-1-ov-file\n' +
+					' * v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %>\n*/',
+					linebreak: true
+				},
+				files: {
+					src: [ 'dist/oag.min.css', 'dist/oag.min.js' ]
+				}
+			}
+		},
 	});
 
 	grunt.registerTask('postcss-cli', 'Run PostCSS CLI', function() {
@@ -28,6 +49,7 @@ module.exports = function(grunt) {
                 done(false);
             } else {
                 grunt.log.writeln(stdout);
+				done();
             }
         });
     });
@@ -35,5 +57,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.registerTask('default', ['clean', 'copy', 'postcss-cli']);
+	grunt.loadNpmTasks('grunt-uglify');
+	grunt.loadNpmTasks('grunt-banner');
+	grunt.registerTask('default', ['clean', 'copy', 'postcss-cli', 'uglify', 'usebanner']);
 };
