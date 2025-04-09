@@ -15,23 +15,7 @@
 
 /* Wrapper class added to facilitate overriding the GCWeb style and avoid race condition conflict*/
 .oag-theme {
-	#wb-srch {
-		input {
-			border-color: var(--oag-primary-color);
-			&[placeholder] {
-				color: var(--oag-primary-color) !important;
-			}
-		}
-		button {
-			background-color: var(--oag-primary-color);
-		}
-	}
-
-	#wb-bnr + hr {
-		/* Border color for horizontal rule after banner */
-		border-top: 3px solid var(--oag-primary-color);
-	}
-
+	
 	main {
 		/* Font size for main content */
 		font-size: var(--oag-font-size);
@@ -58,48 +42,10 @@
 			/* Align search bar to the end */
 			align-self: end;
 		}
-	}	
-
-	h1#wb-cont, hgroup#wb-cont h1 {
-		/* Border styling for main heading */
-		border-bottom: .18em solid var(--oag-primary-color);
-		border-image: linear-gradient(to right,var(--oag-primary-color) 71px,transparent 71px);
-		border-image-slice: 100%;
-		border-image-slice: 1;
-		border-left-width: 0;
-		border-right-width: 0;
-		border-top-width: 0;
-	}
-
-	hgroup {
-		h2 + p {
-			font-weight: 700;
-		}
-	}
-
-	blockquote {
-		font-size: 100%;
-		line-height: 1.4375;
-		color: #262d35;
-		cite span {
-			font-weight: 700;
-		}
-		p {
-			&:first-of-type::before {
-				/* Add opening quote before first paragraph */
-				content: "“";
-				font-size: 2em;
-				font-weight: bold;
-				color: var(--oag-link-color);
-			}
-			&:last-of-type::after {
-				/* Add closing quote after last paragraph */
-				content: "”";
-			}
-		}
 	}
 	
 	.gcweb-menu { 
+		/* The gcweb-menu style for basic html is on the bottom, outside the .oag-theme class*/
 		button[aria-haspopup="true"] {
 			color: var(--oag-primary-color);
 			background-color: white;
@@ -139,23 +85,76 @@
 		}
 	}
 
-	.lead {
-		font-size: 2em;
-		font-weight: 100;
-		line-height: 1.2;
+	#wb-srch {
+		input {
+			border-color: var(--oag-primary-color);
+			&[placeholder] {
+				color: var(--oag-primary-color) !important;
+			}
+		}
+		button {
+			background-color: var(--oag-primary-color);
+		}
 	}
 
-	.gc-srvinfo a {
-		color: var(--oag-primary-color);
+	#wb-bnr + hr {
+		/* Border color for horizontal rule after banner */
+		border-top: 3px solid var(--oag-primary-color);
+	}	
+
+	#wb-info .gc-main-footer, #wb-info .landscape {
+		/* Footer background styling */
+		background:var(--oag-primary-color) url(../assets/img/landscape.png) no-repeat right bottom !important;
+		color: #fff;
+	}
+
+	h1#wb-cont {
+		/* Border styling for main heading */
+		border-bottom: .18em solid var(--oag-primary-color);
+		border-image: linear-gradient(to right,var(--oag-primary-color) 71px,transparent 71px);
+		border-image-slice: 100%;
+		border-image-slice: 1;
+		border-left-width: 0;
+		border-right-width: 0;
+		border-top-width: 0;
+	}
+
+	hgroup {
+		h2 + p {
+			font-weight: 700;
+		}
+	}
+
+	blockquote {
+		font-size: 100%;
+		line-height: 1.4375;
+		color: #262d35;		
+		p {
+			&:first-of-type::before {
+				/* Add opening quote before first paragraph */
+				content: "“";
+				font-size: 2em;
+				font-weight: bold;
+				color: var(--oag-link-color);
+			}
+			&:last-of-type::after {
+				/* Add closing quote after last paragraph */
+				content: "”";
+			}
+		}
+	}
+
+	.btn {
+		font-size: unset;
 	}
 
 	.btn-primary {
 		background-color: var(--oag-primary-color);
-		border-color: #26374a;
+		border-color: var(--oag-primary-color);
 		border-radius: unset;
 		&:hover {
 			background-color: #1A303C;
-			border-color: #091c2d;
+			border-color: #1A303C;
 		}
 	}
 
@@ -205,61 +204,27 @@
 
 	.text-primary {
 		color: var(--oag-primary-color);
+	}		
+	
+	.lead {
+		font-size: 2em;
+		font-weight: 100;
+		line-height: 1.2;
 	}
 
 	.well {
 		border: 2px solid #908F84;
+	}	
+
+	.gc-srvinfo a {
+		color: var(--oag-primary-color);
 	}
-
-	/* Home page - reports section */
-
 	.panel-default {
 		/* Default panel styling */
 		border: 1px solid transparent;
 		background-color: #F4F4F2;
 	}
-	.reports-ctnr {
-		/* Container styling for reports */
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-		position: relative;
-		h3 {
-			width: fit-content;
-		}
-		.alert.alert-info {
-			margin-bottom: auto;
-		}
-	}
 	
-	.reports {
-		font-size: 20px;
-		line-height: 1.2;	
-		hgroup {
-			display: flex;
-			align-items: center;
-			gap: 15px;	
-			h3, p {
-				margin: 0;
-			}
-			h2 + p {
-				font-weight: 700;
-			}	
-			p {
-				font-size: 14px;
-				font-weight: 700;
-			}
-		}
-	}	
-	/* End home page - reports section */
-
-	#wb-info .gc-main-footer, #wb-info .landscape {
-		/* Footer background styling */
-		background:var(--oag-primary-color) url(../assets/img/landscape.png) no-repeat right bottom !important;
-		color: #fff;
-	}
-
 	@media (max-width: 767px) {
 		.lead {
 			font-size: 1em;
@@ -282,6 +247,42 @@
 		}
 		.gcweb-menu [role="menu"] [role="menu"] li:last-child [role="menuitem"] {
 			text-decoration: underline;
+		}
+	}
+}
+
+.oag-theme.home{
+	.reports-ctnr {
+		/* Container styling for reports */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		position: relative;
+		h3 {
+			width: fit-content;
+		}
+		.alert.alert-info {
+			margin-bottom: auto;
+		}
+	}
+	.reports {
+		font-size: 20px;
+		line-height: 1.2;	
+		hgroup {
+			display: flex;
+			align-items: center;
+			gap: 15px;	
+			h3, p {
+				margin: 0;
+			}
+			h2 + p {
+				font-weight: 700;
+			}	
+			p {
+				font-size: 14px;
+				font-weight: 700;
+			}
 		}
 	}
 }

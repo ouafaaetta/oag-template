@@ -3,16 +3,12 @@
 ++++++++++++++++++++++++++++++++++
 + i18 Text
 +
-+ Global text used by the GCWeb template.
++ Global text used by the OAG template.
 ++++++++++++++++++++++++++++++++++
 
 {%- endcomment -%}
 
 {%- assign  setting-resourcesGCWebBasePathTheme = "https://wet-boew.github.io/themes-dist/GCWeb/" -%}
-
-{%- assign i18nText-siteTitle = "Office of the Auditor General of Canada" -%}
-{%- assign i18nText-home = "Home" -%}
-{%- assign i18nText-wmmsImg = "assets/OAG-Logo-EN_first-White.svg" -%}
 
 {%- if page.language == "fr" -%}
 
@@ -27,8 +23,8 @@
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/fr/transparence/avis.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/fr/transparence/confidentialite.html" %}
 	{% assign i18nText-altLanguage = "English" %}
-	{% assign i18nText-soag-header-img = "assets/soag-header-fr.svg" %}
-	{% assign i18nText-soag-footer-img = "assets/soag-footer-fr.svg" %}	
+	{% assign i18nText-soag-header-img = "../assets/soag-header-fr.svg" %}
+	{% assign i18nText-soag-footer-img = "../assets/soag-footer-fr.svg" %}	
 	{% assign i18nText-soag-footer = "Symbole du Bureau du vérificateur général du Canada" %}	
 
 {%- elsif page.language == "en" -%}
@@ -44,8 +40,8 @@
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/en/transparency/terms.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/en/transparency/privacy.html" %}
 	{% assign i18nText-altLanguage = "Français" %}
-	{% assign i18nText-soag-header-img = "assets/soag-header-en.svg" %}
-	{% assign i18nText-soag-footer-img = "assets/soag-footer-en.svg" %}	
+	{% assign i18nText-soag-header-img = "../assets/soag-header-en.svg" %}
+	{% assign i18nText-soag-footer-img = "../assets/soag-footer-en.svg" %}	
 	{% assign i18nText-soag-footer = "Symbol of the Office of the Auditor General of Canada" %}
 	
 {%- endif -%}

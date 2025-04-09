@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 				options: {
 					position: 'top',
 					banner: '/*!\n * @title OAG template \n' +
-					' * @license https://github.com/ServiceCanada/oag-template/?tab=MIT-1-ov-file\n' +
+					' * @license https://github.com/ServiceCanada/oag-template/blob/main/LICENSE\n' +
 					' * v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %>\n*/',
 					linebreak: true
 				},

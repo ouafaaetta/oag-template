@@ -81,4 +81,4 @@ See [SECURITY.md](SECURITY.md)
 
 ## License
 
-See [LICENSE.md](LICENSE.md)
+See [LICENSE.md](https://github.com/ServiceCanada/oag-template/blob/main/LICENSE)
