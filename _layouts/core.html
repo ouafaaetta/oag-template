@@ -18,7 +18,7 @@ Page untitled
 		{% include metadata.html %}
 		<link rel="stylesheet" href="{{ setting-resourcesGCWebBasePathTheme }}/GCWeb/css/theme{{ setting-minifiedSuffix }}.css" />
 		<link href="../assets/favicon.ico" rel="icon" type="image/x-icon" />
-		<link rel="stylesheet" href="../assets/oag.css" />
+		<link rel="stylesheet" href="{{ rel_path | append: 'oag.css' }}" />
 	</head>
 	<body {% if page.pageclass %}class="{{ page.pageclass }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
 	{%- if page.archived -%}

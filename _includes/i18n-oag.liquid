@@ -10,9 +10,17 @@
 
 {%- assign  setting-resourcesGCWebBasePathTheme = "https://wet-boew.github.io/themes-dist/GCWeb/" -%}
 
+{% assign current_url = site.url | append: page.url %}
+{% if current_url contains "/examples/" %}
+  {% assign rel_path = "../assets/" %}
+{% else %}
+  {% assign rel_path = "assets/" %}
+{% endif %}
+
+{% assign i18nText-homePageUrl = "https://servicecanada.github.io/oag-template/" %}
+
 {%- if page.language == "fr" -%}
 
-	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/internet/Francais/admin_f_41.html" %}
 	{% assign i18nText-soag-header = "Bureau du vérificateur général du Canada" %}
 	{% assign i18nText-soag-headerAltLang = '<span lang="en">Office of the Auditor General of Canada</span>' %}
 	{% assign i18nText-searchSite = "Rechercher dans oag-bvg.gc.ca" %}
@@ -23,13 +31,12 @@
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/fr/transparence/avis.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/fr/transparence/confidentialite.html" %}
 	{% assign i18nText-altLanguage = "English" %}
-	{% assign i18nText-soag-header-img = "../assets/soag-header-fr.svg" %}
+	{% assign i18nText-soag-header-img = rel_path | append: "soag-header-fr.svg" %}
 	{% assign i18nText-soag-footer-img = "../assets/soag-footer-fr.svg" %}	
 	{% assign i18nText-soag-footer = "Symbole du Bureau du vérificateur général du Canada" %}	
 
 {%- elsif page.language == "en" -%}
 
-	{% assign i18nText-homePage = "https://www.oag-bvg.gc.ca/en.html" %}
 	{% assign i18nText-soag-header = "Office of the Auditor General of Canada" %}
 	{% assign i18nText-soag-headerAltLang = '<span lang="fr">Bureau du vérificateur général du Canada</span>' %}
 	{% assign i18nText-searchSite = "Search oag-bvg.gc.ca" %}
@@ -40,7 +47,7 @@
 	{% assign i18nText-termsUrl = "https://www.oag-bvg.gc.ca/en/transparency/terms.html" %}
 	{% assign i18nText-privacyUrl = "https://www.oag-bvg.gc.ca/en/transparency/privacy.html" %}
 	{% assign i18nText-altLanguage = "Français" %}
-	{% assign i18nText-soag-header-img = "../assets/soag-header-en.svg" %}
+	{% assign i18nText-soag-header-img = rel_path | append: "soag-header-en.svg" %}
 	{% assign i18nText-soag-footer-img = "../assets/soag-footer-en.svg" %}	
 	{% assign i18nText-soag-footer = "Symbol of the Office of the Auditor General of Canada" %}
 	
