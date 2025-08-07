@@ -9,7 +9,7 @@ Page untitled
 {%- endif -%}
 {%- endcapture -%}
 <!DOCTYPE html>
-<html class="no-js" lang="{{ i18nText-lang | default: 'en' }}" dir="{{ i18nText-langDir | default: 'ltr' }}">
+<html class="no-js" lang="{{ page.language | default: 'en' }}" dir="ltr">
 	<head>
 		<meta charset="utf-8">
 		{% include license.html %}
