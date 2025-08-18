@@ -9,203 +9,205 @@ breadcrumbs: false
 pageclass: "oag-theme home"
 ---
 
-{%- include variable-core.liquid -%}
-
 <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
 	<h1 class="wb-inv" property="name" id="wb-cont">{{ page.title }}</h1>
-	<div class="mrgn-tp-lg pt-4 pb-4 bg-dark bg-center bg-cover"
-		data-bgimg-srcset="../assets/img/dark_background.png 600w, ../assets/img/dark_background.png 992w">
+	<div class="pt-4 pb-4 bg-dark bg-center bg-cover" data-bgimg-srcset="../assets/img/dark_background.png 600w, ../assets/img/dark_background.png 992w">
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="mrgn-bttm-xl text-white lead fnt-hdng">Nous servons le Canada grâce à notre leadership et à nos partenariats dans les audits qui
-						soutiennent la confiance dans les institutions publiques et l'excellence continue du service public.</p>
-				</div>
-			</div>
-			<section class="reports">
-				<h2 class="wb-inv">Rapports</h2>
-				<div class="row wb-eqht-grd hght-inhrt">
-					<!-- Colonne de gauche -->
-					<div class="col-xs-12 col-sm-7">
-						<section class="bg-center bg-cover well hght-inhrt pt-0"
-							data-bgimg-srcset="../assets/img/bear-background.png 600w, ../assets/img/bear-background.png 992w">
-							<div class="reports-ctnr">
-								<h3 class="label label-primary fnt-hdng mt-3">Rapports du Vérificateur général du
-									Canada</h3>
-								<section class="alert alert-info mrgn-tp-lg mrgn-bttm-lg">
-									<h4 class="text-uppercase">3 Rapports à venir :</h4>
-									<p><strong><time class="h2 text-primary" datetime="2025-03-19">19 mars 2025</time></strong></p>
-								</section>
-								<p><a class="btn btn-lg btn-primary mt-3 " href="content.html">Voir tous les rapports à venir</a></p>
-							</div>
-						</section>
-					</div>
-					<!-- Colonne de droite -->
-					<div class="col-xs-12 col-sm-5">
-						<section class="well">
-							<hgroup class="mb-3">
-								<h3 class="label label-primary fnt-hdng">Rapports du VG</h3>
-								<p class="fw-bold small text-uppercase"><time datetime="2025-06-05"><span>6 mai 2025</span></time></p>
-							</hgroup>
-							<p class="mb-3">Initiative d'accélérateur Net Zéro du Fonds stratégique pour l'innovation—Innovation,
-								Sciences et Développement économique Canada</p>
-							<a href="#" class="pull-right no-undrln btn-link pl-1 pr-2 ml-auto">Lire le rapport &rarr;</a>
-						</section>
-						<section class="well">
-							<hgroup class="mb-3">
-								<h3 class="label label-primary fnt-hdng">Rapports du BVEC</h3>
-								<p class="fw-bold small text-uppercase"><time datetime="2025-03-18"><span>18 avril 2025</span></time></p>
-							</hgroup>
-							<p class="mb-3">Logement dans les communautés des Premières Nations</p>
-							<a href="#" class="pull-right no-undrln btn-link pl-1 pr-2 ml-auto">Lire le rapport &rarr;</a>
-						</section>
-					</div>
-				</div>
-			</section>
+			<p class="lead">Nous servons le Canada grâce à notre leadership et à nos partenariats dans les audits qui soutiennent la confiance dans les institutions publiques et l'excellence continue du service public.</p>
 		</div>
-
 	</div>
 
-	<section class="mrgn-tp-lg mrgn-bttm-sm gc-srvinfo">
-		<h2 class="wb-inv">Caractéristiques</h2>
+	<section class="reports">
+		<div class="container">
+			<h2 class="wb-inv">Rapports</h2>
+			<div class="row wb-eqht-grd hght-inhrt">
+				<!-- Left Column -->
+				<div class="col-xs-12 col-md-7">
+					<article class="bg-center bg-cover oag-card h-100" data-bgimg-srcset="../assets/img/bear-background.png 600w, ../assets/img/bear-background.png 992w">
+						<div class="mb-4"><span class="label label-default">Rapports du Vérificateur général du Canada</span></div>
+						<div class="alert alert-info my-4">
+							<h3 class="h4 text-uppercase">3 rapports à venir:</h3>
+							<p><time datetime="2025-09-10">10 septembre 2025</time></p>
+						</div>
+						<p class="mt-auto"><a class="btn btn-lg btn-primary stretched-link" href="listing-reports-fr.html">Voir tous les rapports à venir</a></p>
+					</article>
+				</div>
+				<!-- Right Column -->
+				<div class="col-xs-12 col-md-5">
+					<article class="oag-card oag-heading-as-body">
+						<div class="mb-3">
+							<span class="label label-default">Rapports du VG</span>
+							<time datetime="2025-08-18">18 août 2025</time>
+						</div>
+						<h3>Initiative d'accélérateur Net Zéro du Fonds stratégique pour l'innovation—Innovation, Sciences et Développement économique Canada</h3>
+						<a href="audit-report-fr.html" class="btn btn-link stretched-link ml-auto">Lire le rapport &rarr;</a>
+					</article>
+					<article class="oag-card oag-heading-as-body">
+						<div class="mb-3">
+							<span class="label label-default">Rapports du BVEC</span>
+							<time datetime="2025-09-10">10 septembre 2025</time>
+						</div>
+						<h3>Logement dans les communautés des Premières Nations</h3>
+						<a href="audit-report-fr.html" class="btn btn-link stretched-link ml-auto">Lire le rapport &rarr;</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="my-4">
+		<h2 class="wb-inv">En vedette</h2>
 		<div class="container">
 			<div class="row wb-eqht-grd">
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-md-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Enquêtes publiques</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Enquêtes publiques</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-sm-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Opportunités d'emploi</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Opportunités d'emploi</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-sm-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Mises à jour sur les audits passés</a>
-									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Mises à jour sur les audits passés</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<div class="pt-4 pb-4 bg-light">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-sm-8 pr-4">
-					<h2>
-						Rassembler les gens, l'expertise et la technologie pour un Canada meilleur,
-						<span class="nowrap">un audit à la fois.</span> 
-					</h2>
-					<p>
-						Le Bureau du Vérificateur général du Canada (BVG) sert le Parlement en lui fournissant des informations objectives,
-						basées sur des faits et des conseils d'experts sur les programmes et activités gouvernementaux, recueillis par le biais d'audits.
-						Les parlementaires utilisent les rapports du BVG pour superviser les activités gouvernementales et tenir le gouvernement fédéral responsable de sa gestion des fonds publics.
-					</p>
+		<div class="container my-sm-4">
+			<div class="row py-4">
+				<div class="col-sm-7 col-md-8 pr-4">
+					<h2 class="mt-0">Rassembler les gens, l'expertise et la technologie pour un Canada meilleur, un audit à la fois.</h2>
+					<p>Le Bureau du Vérificateur général du Canada (BVG) sert le Parlement en lui fournissant des informations objectives, par le biais d'audits. gouvernement fédéral responsable de sa gestion des fonds publics.</p>
 				</div>
-				<div class="col-sm-4">
-					<img class="img-responsive" src="../assets/img/entry-building.png" alt="Image de l'entrée du bâtiment du BVG" />
+				<div class="col-sm-5 col-md-4 hidden-xs">
+					<img class="img-responsive oag-rds" src="../assets/img/entry-building.png" alt="" />
 				</div>
 			</div>
-			<div class="row pb-4">
-				<div class="col-sm-5 pr-4">
-					<img class="img-responsive" src="../assets/img/karen-hogan.png" alt="Photo de Karen Hogan" />
+			<div class="row py-4">
+				<div class="col-sm-5 pr-4 mb-4">
+					<img class="img-responsive oag-rds ml-auto mr-auto" src="../assets/img/karen-hogan.png" alt="Photo de Karen Hogan" />
 				</div>
 				<div class="col-sm-7">
-					<blockquote>
-						<p>
-						
-							J'ai été et continue d'être inspirée par les personnes qui travaillent
-							dans notre bureau. Elles sont attentionnées,
-							créatives,
-							compétentes, incroyablement intelligentes et professionnelles, et toujours concentrées sur le maintien de normes élevées
-							tout en contribuant à un gouvernement bien géré et responsable. Il a été pour moi un privilège de travailler
-							aux côtés de ces
-							personnes et de jouer un rôle dans la définition de la direction stratégique du bureau et
-							la conduite du changement organisationnel.
-							
-						</p>						
-					</blockquote>
-					<p>&mdash; Karen Hogan<br> Vérificateur général du Canada</p>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-<div class="bg-center bg-cover"
-		data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/people-background2.png 768w">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 pull-right pt-4 pb-4">
-					<hgroup>
-						<h2>Travailler au BVG</h2>
-						<p>Un travail stimulant et significatif.</p>
-					</hgroup>
-					
-					<p>
-						Au BVG, nous nous efforçons toujours de nous améliorer. Nous visons à nous améliorer et à nous adapter aux besoins de notre personnel—nous
-						voulons que vous
-						vouliez travailler ici. Nous reconnaissons la valeur des différentes formations éducatives, professionnelles et culturelles
-						au sein de notre équipe.
-					</p>
-					<p><a class="btn btn-lg btn-primary" href="#">Opportunités de carrière</a></p>
+					<figure>
+						<blockquote>
+							<p>J'ai été et continue d'être inspirée par les personnes qui travaillent dans notre bureau. Elles sont attentionnées, créatives, de normes élevées travailler aux côtés de ces personnes et de jouer un rôle dans la définition de la direction stratégique du bureau et la conduite du changement organisationnel.</p>
+						</blockquote>
+						<figcaption>
+							<p>&mdash; <strong>Karen Hogan</strong><br> Vérificatrice générale du Canada</p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bg-dark text-white bg-center bg-cover"
-		data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/river-background.png 768w">
+	<div class="bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/people-background2.png 768w">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 pt-4 pr-4 pb-4">
-					<h2>Pétitions environnementales</h2>					
-					<p>
-						Les pétitions environnementales sont un moyen unique pour les résidents canadiens—agissant individuellement ou au nom
-						d'une organisation—de porter leurs préoccupations et questions sur les questions environnementales liées au développement durable à l'attention des ministres fédéraux, avec une réponse garantie.
-					</p>
-					<p><a class="btn btn-lg btn-primary" href="#">En savoir plus sur les pétitions</a></p>
+				<div class="col-sm-6 col-md-5 pull-right p-4 mb-4">
+					<hgroup>
+						<h2>Travailler au BVG</h2>
+						<p><strong>Un travail stimulant et significatif.</strong></p>
+					</hgroup>
+					<p class="mb-4">Au BVG, nous nous efforçons toujours de nous améliorer. Nous visons à nous améliorer et à nous adapter aux besoins de notre personnel—nous voulons que vous professionnelles et culturelles au sein de notre équipe.</p>
+					<p class="mb-4"><a class="btn btn-lg btn-primary" href="#">Opportunités de carrière</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-dark text-white bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/river-background.png 768w">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-5 p-4 mb-4">
+					<h2 class="text-white">Pétitions environnementales</h2>
+					<p class="mb-4">Les pétitions environnementales sont un moyen unique pour les résidents canadiens—agissant individuellement ou au nom développement durable à l'attention des ministres fédéraux, avec une réponse garantie.</p>
+					<p class="mb-4"><a class="btn btn-lg btn-primary" href="#">En savoir plus sur les pétitions</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-4">
+		<div class="row wb-eqht-grd">
+			<div class="col-xs-12 col-lg-4">
+				<div class="oag-brdr oag-rds p-4 mb-3 hght-inhrt">
+					<h2 class="mt-0 mt-lg-4">Dernières nouvelles</h2>					
+					<p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					<p class="mt-auto"><a class="btn btn-lg btn-primary" href="#">Visiter la Salle de nouvelles</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-8">
+				<div class="row wb-eqht-grd">
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">Nouvelles</span>
+								<time datetime="2025-03-18">18 avril 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">En lire plus &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">Nouvelles</span>
+								<time datetime="2025-03-18">18 avril 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">En lire plus &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">Nouvelles</span>
+								<time datetime="2025-03-18">18 avril 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">En lire plus &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">Nouvelles</span>
+								<time datetime="2025-03-18">18 avril 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">En lire plus &rarr;</a>
+						</article>
+					</div>
 				</div>
 			</div>
 		</div>

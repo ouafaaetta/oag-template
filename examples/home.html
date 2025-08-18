@@ -1,5 +1,5 @@
 ---
-dateModified: "2025-04-08"
+dateModified: "2025-05-15"
 description: "Office of the Auditor General of Canada home page template"
 language: "en"
 altLangPage: "home-fr.html"
@@ -13,212 +13,206 @@ pageclass: "oag-theme home"
 {%- include variable-core.liquid -%}
 <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
 	<h1 class="wb-inv" property="name" id="wb-cont">{{ page.title }}</h1>
-	<div class="mrgn-tp-lg pt-4 pb-4 bg-dark bg-center bg-cover"
-		data-bgimg-srcset="../assets/img/dark_background.png 600w, ../assets/img/dark_background.png 992w">
+	<div class="pt-4 pb-4 bg-dark bg-center bg-cover" data-bgimg-srcset="../assets/img/dark_background.png 600w, ../assets/img/dark_background.png 992w">
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="mrgn-bttm-xl text-white lead fnt-hdng">We serve Canada through leadership and partnerships in audits that
-						support trust in public
-						institutions and continued public service excellence.</p>
-				</div>
-			</div>
-			<section class="reports">
-				<h2 class="wb-inv">Reports</h2>
-				<div class="row wb-eqht-grd hght-inhrt">
-					<!-- Left Column -->
-					<div class="col-xs-12 col-sm-7">
-						<section class="bg-center bg-cover well hght-inhrt pt-0"
-							data-bgimg-srcset="../assets/img/bear-background.png 600w, ../assets/img/bear-background.png 992w">
-							<div class="reports-ctnr">
-								<h3 class="label label-primary fnt-hdng mt-3">Reports of the Auditor General of
-									Canada</h3>
-								<section class="alert alert-info mrgn-tp-lg mrgn-bttm-lg">
-									<h4 class="text-uppercase">3 Upcoming Reports:</h4>
-									<p><strong><time class="h2 text-primary" datetime="2025-03-19">March 19, 2025</time></strong></p>
-								</section>
-								<p><a class="btn btn-lg btn-primary mt-3 " href="content.html">See all upcoming reports</a></p>
-							</div>
-						</section>
-					</div>
-					<!-- Right Column -->
-					<div class="col-xs-12 col-sm-5">
-						<section class="well">
-							<hgroup class="mb-3">
-								<h3 class="label label-primary fnt-hdng">AG Reports</h3>
-								<p class="fw-bold small text-uppercase"><time datetime="2025-06-05"><span>May 6, 2025</span></time></p>
-							</hgroup>
-							<p class="mb-3">Strategic Innovation Fund’s Net Zero Accelerator Initiative—Innovation,
-								Science and Economic Development Canada</p>
-							<a href="#" class="pull-right no-undrln btn btn-link pl-1 pr-2 ml-auto">Read report &rarr;</a>
-						</section>
-						<section class="well">
-							<hgroup class="mb-3">
-								<h3 class="label label-primary fnt-hdng">CESD Reports</h3>
-								<p class="fw-bold small text-uppercase"><time datetime="2025-03-18"><span>April 18, 2025</span></time></p>
-							</hgroup>
-							<p class="mb-3">Housing in First Nations Communities</p>
-							<a href="#" class="pull-right no-undrln btn btn-link pl-1 pr-2 ml-auto">Read report &rarr;</a>
-						</section>
-					</div>
-				</div>
-			</section>
+			<p class="lead">We serve Canada through leadership and partnerships in audits that support trust in public institutions and continued public service excellence.</p>
 		</div>
-
 	</div>
 
-	<section class="mrgn-tp-lg mrgn-bttm-sm gc-srvinfo">
+	<section class="reports">
+		<div class="container">
+			<h2 class="wb-inv">Reports</h2>
+			<div class="row wb-eqht-grd hght-inhrt">
+				<!-- Left Column -->
+				<div class="col-xs-12 col-md-7">
+					<article class="bg-center bg-cover oag-card h-100" data-bgimg-srcset="../assets/img/bear-background.png 600w, ../assets/img/bear-background.png 992w">
+						<div class="mb-4"><span class="label label-default">Reports of the Auditor General of Canada</span></div>
+						<div class="alert alert-info my-4">
+							<h3 class="h4 text-uppercase">3 Upcoming Reports:</h3>
+							<p><time datetime="2025-09-10">September 10, 2025</time></p>
+						</div>
+						<p class="mt-auto"><a class="btn btn-lg btn-primary stretched-link" href="listing-reports.html">See all upcoming reports</a></p>
+					</article>
+				</div>
+				<!-- Right Column -->
+				<div class="col-xs-12 col-md-5">
+					<article class="oag-card oag-heading-as-body">
+						<div class="mb-3">
+							<span class="label label-default">AG Reports</span>
+							<time datetime="2025-08-18">August 18, 2025</time>
+						</div>
+						<h3>Strategic Innovation Fund’s Net Zero Accelerator Initiative—Innovation, Science and Economic Development Canada</h3>
+						<a href="audit-report.html" class="btn btn-link stretched-link ml-auto">Read report &rarr;</a>
+					</article>
+					<article class="oag-card oag-heading-as-body">
+						<div class="mb-3">
+							<span class="label label-default">CESD Reports</span>
+							<time datetime="2025-09-10">September 10, 2025</time>
+						</div>
+						<h3>Housing in First Nations Communities</h3>
+						<a href="audit-report.html" class="btn btn-link stretched-link ml-auto">Read report &rarr;</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="my-4">
 		<h2 class="wb-inv">Features</h2>
 		<div class="container">
 			<div class="row wb-eqht-grd">
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-md-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Public Inquiries</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Public Inquiries</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-sm-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Job Opportunities</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Job opportunities</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 
-				<div class="col-sm-4">
-					<section class="panel panel-default gc-hvr-shadow eqht-trgt hght-inhrt">
-						<div class="panel-body">
-							<div class="row wb-eqht-grd">
-								<div class="align-items-center hidden-xs hidden-sm col-sm-3">
-									<span class="img-rounded text-center center-block">
-										<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-									</span>
-								</div>
-								<div class="col-sm-9">
-									<h3 class="h4"><a href="#" class="stretched-link no-undrln">Updates on Past Audits</a>
-									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna.</p>
-								</div>
+				<div class="col-xs-12 col-lg-4">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Updates on Past Audits</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
 							</div>
 						</div>
-					</section>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<div class="pt-4 pb-4 bg-light">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-sm-8 pr-4">
-					<h2>
-						Bringing togheter people, expertise, and technology for a better Canada,
-						<span class="nowrap">one audit at a time.</span> 
-					</h2>
-					<p>
-						The Office of the Auditor General of Canada (OAG) serves Parliament by providing it with objective,
-						fact-based
-						information and expert advice on government programs and activities, gathered through audits.
-						Parliamentarians
-						use OAG reports to oversee government activities and hold the federal government to account for its
-						handling of
-						public funds.
-					</p>
+		<div class="container my-sm-4">
+			<div class="row py-4">
+				<div class="col-sm-7 col-md-8 pr-4">
+					<h2 class="mt-0">Bringing togheter people, expertise, and technology for a better Canada, one audit at a time.</h2>
+					<p>The Office of the Auditor General of Canada (OAG) serves Parliament by providing it with objective, fact-based information and expert advice on government programs and activities, gathered through audits. Parliamentarians use OAG reports to oversee government activities and hold the federal government to account for its handling of public funds.</p>
 				</div>
-				<div class="col-sm-4">
-					<img class="img-responsive" src="../assets/img/entry-building.png" alt="Image of OAG building entry" />
+				<div class="col-sm-5 col-md-4 hidden-xs">
+					<img class="img-responsive oag-rds" src="../assets/img/entry-building.png" alt="" />
 				</div>
 			</div>
-			<div class="row pb-4">
-				<div class="col-sm-5 pr-4">
-					<img class="img-responsive" src="../assets/img/karen-hogan.png" alt="Photo of Karen Hogan" />
+			<div class="row py-4">
+				<div class="col-sm-5 pr-4 mb-4">
+					<img class="img-responsive oag-rds ml-auto mr-auto" src="../assets/img/karen-hogan.png" alt="Photo of Karen Hogan" />
 				</div>
 				<div class="col-sm-7">
-					<blockquote>
-						<p>
-						
-							I have been and continue to be inspired by the people who work
-							in our office. They are caring,
-							creative,
-							skilled, incredibly intelligent and professional, and always focused on upholding high standards
-							while
-							contributing to a well-managed and accountable government. It has been my privilege to work
-							alongside
-							these
-							individuals and to have played a part in shaping the strategic direction of the office and
-							leading
-							organizational change.
-							
-						</p>						
-					</blockquote>
-					<p>&mdash; Karen Hogan<br> Auditor General of Canada</p>
+					<figure>
+						<blockquote>
+							<p>I have been and continue to be inspired by the people who work in our office. They are caring, creative, skilled, incredibly intelligent and professional, and always focused on upholding high standards while contributing to a well-managed and accountable government. It has been my privilege to work alongside these individuals and to have played a part in shaping the strategic direction of the office and leading organizational change.</p>
+						</blockquote>
+						<figcaption>
+							<p>&mdash; <strong>Karen Hogan</strong><br> Auditor General of Canada</p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bg-center bg-cover"
-		data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/people-background2.png 768w">
+	<div class="bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/people-background2.png 768w">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 pull-right pt-4 pb-4">
+				<div class="col-sm-6 col-md-5 pull-right p-4 mb-4">
 					<hgroup>
 						<h2>Working at the OAG</h2>
-						<p>Challenging, meaningful work.</p>
+						<p><strong>Challenging, meaningful work.</strong></p>
 					</hgroup>
-					
-					<p>
-						At the OAG, we always strive to be better. We aim to improve and adapt to the needs of our people—we
-						want you
-						to want to work here. We recognize the value of different educational, professional, and cultural
-						backgrounds
-						within our team.
-					</p>
-					<p><a class="btn btn-lg btn-primary" href="#">Career opportunities</a></p>
+					<p class="mb-4">At the OAG, we always strive to be better. We aim to improve and adapt to the needs of our people—we want you to want to work here. We recognize the value of different educational, professional, and cultural backgrounds within our team.</p>
+					<p class="mb-4"><a class="btn btn-lg btn-primary" href="#">Career opportunities</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bg-dark text-white bg-center bg-cover"
-		data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/river-background.png 768w">
+	<div class="bg-dark text-white bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 767w, ../assets/img/river-background.png 768w">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 pt-4 pr-4 pb-4">
-					<h2>Environmental Petitions</h2>					
-					<p>
-						Environmental petitions are a unique way for Canadian residents—acting as individuals or on behalf
-						of an organization—to bring their concerns and questions about environmental issues related to sustainable
-						development to the attention of the federal ministers, with a guaranteed response.
-					</p>
-					<p><a class="btn btn-lg btn-primary" href="#">More about petitions</a></p>
+				<div class="col-sm-6 col-md-5 p-4 mb-4">
+					<h2 class="text-white">Environmental Petitions</h2>
+					<p class="mb-4">Environmental petitions are a unique way for Canadian residents—acting as individuals or on behalf of an organization—to bring their concerns and questions about environmental issues related to sustainable development to the attention of the federal ministers, with a guaranteed response.</p>
+					<p class="mb-4"><a class="btn btn-lg btn-primary" href="#">More about petitions</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-4">
+		<div class="row wb-eqht-grd">
+			<div class="col-xs-12 col-lg-4">
+				<div class="oag-brdr oag-rds p-4 mb-3 hght-inhrt">
+					<h2 class="mt-0 mt-lg-4">Latest News</h2>					
+					<p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					<p class="mt-auto"><a class="btn btn-lg btn-primary" href="#">Visit News Room</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-8">
+				<div class="row wb-eqht-grd">
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">News Release</span>
+								<time datetime="2025-03-18">April 18, 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">Read more &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">News Release</span>
+								<time datetime="2025-03-18">April 18, 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">Read more &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">News Release</span>
+								<time datetime="2025-03-18">April 18, 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">Read more &rarr;</a>
+						</article>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<article class="oag-card bg-light oag-heading-as-body">
+							<div class="mb-3">
+								<span class="label label-default">News Release</span>
+								<time datetime="2025-03-18">April 18, 2025</time>
+							</div>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+							<a href="#" class="pull-right btn btn-link ml-auto mt-auto stretched-link">Read more &rarr;</a>
+						</article>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	{% include page-details/footer.html addContainer=true %}
 </main>
-

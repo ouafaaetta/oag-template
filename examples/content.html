@@ -1,156 +1,413 @@
 ---
 altLangPage: "content-fr.html"
-dateModified: "2025-04-08"
+dateModified: "2025-05-15"
 description: "Office of the Auditor General of Canada content page"
 language: "en"
 pageclass: "oag-theme wb-prettify all-pre"
-title: "OAG - content page"
+title: "Content page"
 layout: default
 ---
 
-<p>Note: This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
+<section class="alert alert-info">
+	<h2 class="h5">Note</h2>
+	<p>This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
+</section>
 <p>For a complete list of features, please visit the <a href="https://wet-boew.github.io/GCWeb/index-en.html">GCWeb website</a>. Refer to the documentation for detailed information on each change.</p>
 
-<h2>Heading h2</h2>
+<h2>On this page</h2>
+<ul>
+	<li><a href="#scaffolding">Scaffolding</a></li>
+	<li><a href="#buttons">Buttons</a></li>
+	<li><a href="#alerts">Notices (was alerts)</a></li>
+	<li><a href="#labels">Labels</a></li>
+	<li><a href="#tabbed-interface">Tabbed interface - vertical variant</a></li>
+	<li><a href="#cards">Cards</a></li>
+	<li><a href="#pagination">Pagination</a></li>
+	<li><a href="#existing-utilities">Existing utilities</a></li>
+	<li><a href="#oag-utilities">OAG specific utilities</a></li>
+</ul>
+
+<h2 id="scaffolding">Scaffolding</h2>
+
 <section>
-	<h3>Heading h3</h3>
+	<h3>Headings</h3>
 	<section>
-		<h4>Heading h4</h4>
+		<h2>Heading h2</h2>
 		<section>
-			<h5>Heading h5</h5>
+			<h3>Heading h3</h3>
 			<section>
-				<h6>Heading h6</h6>
-				<p>Paragraph - default appearance</p>
+				<h4>Heading h4</h4>
+				<section>
+					<h5>Heading h5</h5>
+					<section>
+						<h6>Heading h6</h6>
+						<p>Paragraph - default appearance with <a href="#">a link</a></p>
+					</section>
+				</section>
 			</section>
 		</section>
 	</section>
 </section>
 
-<h2>Buttons and links</h2>
-<p><a href="#">Link</a></p>
-<p><button class="btn btn-primary">Primary button style</button></p>
-<p><a href="#" class="btn btn-primary">Link with primary button style</a></p>
-<p><a href="#" class="btn btn-link ">Button link style</a></p>
-<h3>Code sample</h3>
-<pre><code>&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;Primary button style&lt;/button&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Link with primary button style&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button link style&lt;/a&gt;&lt;/p&gt;</code></pre>
-	
+<h3>Blockquote</h3>
+<figure>
+	<blockquote>
+		<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+	</blockquote>
+	<figcaption>
+		<p>&mdash; Author<br> Example text</p>
+	</figcaption>
+</figure>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;figure>
+	&lt;blockquote>
+		&lt;p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&lt;/p>
+	&lt;/blockquote>
+	&lt;figcaption>
+		&lt;p>&mdash; Author&lt;br> Example text&lt;/p>
+	&lt;/figcaption>
+&lt;/figure></code></pre>
+</details>
 
-<h2>Alert with headings</h2>
+<h3>Details</h3>
+<details>
+	<summary>Details</summary>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum fugiat facilis dolorum voluptatem maiores blanditiis aspernatur quod, dicta explicabo!</p>
+</details>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;details>
+	&lt;summary>Details&lt;/summary>
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum fugiat facilis dolorum voluptatem maiores blanditiis aspernatur quod, dicta explicabo!&lt;/p>
+&lt;/details></code></pre>
+</details>
+
+<h2 id="buttons">Buttons</h2>
+<section>
+	<h3>Regular</h3>
+	<p><a href="#" class="btn btn-primary">Primary</a> <a href="#" class="btn btn-default">Default</a> <a href="#" class="btn btn-link">Link</a></p>
+</section>
+<section>
+	<h3>Large</h3>
+	<p><a href="#" class="btn btn-primary btn-lg">Primary</a> <a href="#" class="btn btn-default btn-lg">Default</a> <a href="#" class="btn btn-link btn-lg">Link</a></p>
+</section>
+<section>
+	<h3>Small</h3>
+	<p><a href="#" class="btn btn-primary btn-sm">Primary</a> <a href="#" class="btn btn-default btn-sm">Default</a> <a href="#" class="btn btn-link btn-sm">Link</a></p>
+</section>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;h3>Regular&lt;/h3>
+&lt;p>&lt;a href="#" class="btn btn-primary">Primary&lt;/a> &lt;a href="#" class="btn btn-default">Default&lt;/a> &lt;a href="#" class="btn btn-link">Link&lt;/a>&lt;/p>
+&lt;h3>Large&lt;/h3>
+&lt;p>&lt;a href="#" class="btn btn-primary btn-lg">Primary&lt;/a> &lt;a href="#" class="btn btn-default btn-lg">Default&lt;/a> &lt;a href="#" class="btn btn-link btn-lg">Link&lt;/a>&lt;/p>
+&lt;h3>Small&lt;/h3>
+&lt;p>&lt;a href="#" class="btn btn-primary btn-sm">Primary&lt;/a> &lt;a href="#" class="btn btn-default btn-sm">Default&lt;/a> &lt;a href="#" class="btn btn-link btn-sm">Link&lt;/a>&lt;/p></code></pre>
+</details>
+
+
+<h2 id="alerts">Notices (was alerts)</h2>
 <section class="alert alert-info">
 	<h3>Info alert</h3>
 	<p>Alert details.</p>
 </section>
 <section class="alert alert-info">
 	<h3>Info alert</h3>
-	<p>Alert details.</p><p>Alert details with 2 paragraphs.</p>
+	<p>Alert details.</p>
+	<p>Alert details with 2 paragraphs.</p>
 </section>
-<h3>Code sample</h3>
-<pre><code>&lt;section class=&quot;alert alert-info&quot;&gt;
-	&lt;h3&gt;Info alert&lt;/h3&gt;
-	&lt;p&gt;Alert details.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section class=&quot;alert alert-info&quot;&gt;
-    &lt;h3&gt;Info alert&lt;/h3&gt;
-    &lt;p&gt;Alert details.&lt;/p&gt;
-    &lt;p&gt;Alert details with 2 paragraphs.&lt;/p&gt;
-&lt;/section&gt;</code></pre>	
-	
-
-<h2>Primary label class</h2>
-<p>Some text here <span class="label label-primary">(Label info)</span></p>
-<h3>Code sample</h3>
-<pre><code>&lt;p&gt;Some text here &lt;span class="label label-primary"&gt;(Label info)&lt;/span&gt;&lt;/p&gt;</code></pre>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;section class="alert alert-info">
+	&lt;h3>Info alert&lt;/h3>
+	&lt;p>Alert details.&lt;/p>
+&lt;/section>
+&lt;section class="alert alert-info">
+	&lt;h3>Info alert&lt;/h3>
+	&lt;p>Alert details.&lt;/p>
+	&lt;p>Alert details with 2 paragraphs.&lt;/p>
+&lt;/section></code></pre>
+</details>
 
 
-<h2>Lead class</h2>
+<h2 id="labels">Labels</h2>
+<p><span class="label label-default">Default label</span></p>
+<p><span class="label label-primary">Primary label</span></p>
+<p><span class="label label-default" data-report-type="CESD">CESD label</span></p>
+<p><span class="label label-default" data-report-type="NLA">NLA label</span></p>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;p>&lt;span class="label label-default">Default label&lt;/span>&lt;/p>
+&lt;p>&lt;span class="label label-primary">Primary label&lt;/span>&lt;/p>
+&lt;p>&lt;span class="label label-default" data-report-type="CESD">CESD label&lt;/span>&lt;/p>
+&lt;p>&lt;span class="label label-default" data-report-type="NLA">NLA label&lt;/span>&lt;/p></code></pre>
+</details>
+
+<h2 id="tabbed-interface">Tabbed interface - vertical variant</h2>
+<p>With session storage to remember last tab viewed. </p>
+<div class="wb-tabs vertical">
+	<div class="tabpanels">
+		<details id="details-panel1">
+			<summary>Example 1</summary>
+			<p>
+				Lorem ipsum dolor sit amet consectetur <a href="#details-panel3">Example 3</a>. Consectetur corrupti ea tempore ex consequatur pariatur adipisci, distinctio expedita, facere officiis dolor, amet possimus dignissimos repudiandae rerum eligendi nisi maiores sequi temporibus accusamus porro itaque voluptate est? Dolorem, inventore, aut perferendis enim natus a vel vero, quae minima ex voluptatibus suscipit.
+			</p>
+		</details>
+		<details id="details-panel2" open="open">
+			<summary>Example 2</summary>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi odio autem obcaecati inventore expedita maxime quos. Perspiciatis quos est nulla, voluptate tenetur laborum dolorum omnis consequuntur laboriosam amet libero vitae adipisci accusamus ex veritatis. Nulla magnam debitis quisquam perspiciatis perferendis repellendus corporis ipsam! Perferendis molestiae nisi beatae fugiat voluptate voluptas.
+			</p>
+		</details>
+		<details id="details-panel3">
+			<summary>Example 3</summary>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, officia maiores, illum nulla doloremque possimus ipsam minima soluta harum provident fugiat optio enim facilis beatae cumque esse magnam ea sunt ipsa fugit deleniti magni error, minus iusto. Nisi laborum optio assumenda saepe accusantium consequatur ipsa asperiores facilis vitae animi atque, illo non minima quos ipsum dolore eius illum quas voluptate dolor. Quasi quisquam, reiciendis omnis itaque incidunt expedita quod a maxime consectetur, rerum eos, placeat aliquid fugiat aliquam sequi. Eligendi obcaecati, minima tenetur non sunt architecto aliquam repellendus laudantium, sapiente placeat iste ad odit est voluptatibus? Velit voluptas optio alias veniam sequi nesciunt error nemo expedita architecto dolore. Enim veritatis soluta at labore voluptas, assumenda sunt laudantium architecto, aliquid ratione id mollitia iure incidunt quos illo? Maxime, illo. Iste, culpa porro sed at quos mollitia, sit omnis molestias voluptatibus facere consequatur saepe quod, nihil ratione. Officia debitis doloribus facilis itaque voluptates pariatur beatae iure enim nihil amet quod ipsam officiis modi dolore, asperiores laudantium sint? Odit repellendus molestias quas in facere assumenda dolore iusto, quisquam vero deserunt porro quibusdam commodi reiciendis excepturi cupiditate perferendis placeat sapiente, obcaecati fugit culpa autem. Perferendis laborum nemo odio ipsa minima error, dignissimos dolorum non!
+			</p>
+		</details>
+	</div>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="wb-tabs vertical">
+	&lt;div class="tabpanels">
+		&lt;details id="details-panel1">
+			&lt;summary>Example 1&lt;/summary>
+			&lt;p>...&lt;/p>
+		&lt;/details>
+		&lt;details id="details-panel2" open="open">
+			&lt;summary>Example 2&lt;/summary>
+			&lt;p>...&lt;/p>
+		&lt;/details>
+		&lt;details id="details-panel3">
+			&lt;summary>Example 3&lt;/summary>
+			&lt;p>...&lt;/p>
+		&lt;/details>
+	&lt;/div>
+&lt;/div></code></pre>
+</details>
+
+<h2 id="cards">Default card</h2>
+<article class="oag-card">
+	<h3 class="mb-3"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi, ipsum sit adipisci expedita repellendus minus quidem maxime praesentium repellat.</p>
+</article>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;article class="oag-card">
+	&lt;h3 class="mb-3">&lt;a href="#">Lorem ipsum dolor sit amet&lt;/a>&lt;/h3>
+	&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi, ipsum sit adipisci expedita repellendus minus quidem maxime praesentium repellat.&lt;/p>
+&lt;/article></code></pre>
+</details>
+
+<h2>Card with background</h2>
+<article class="oag-card bg-light">
+	<h3 class="h4">Lorem ipsum dolor</h3>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab.</p>
+	<a href="#" class="pull-right stretched-link btn btn-link ml-auto mt-auto">Read more &rarr;</a>
+</article>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;article class="oag-card bg-light">
+	&lt;h3 class="h4">Lorem ipsum dolor&lt;/h3>
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab.&lt;/p>
+	&lt;a href="#" class="pull-right stretched-link btn btn-link ml-auto mt-auto">Read more &rarr;&lt;/a>
+&lt;/article></code></pre>
+</details>
+
+<h2>Card with heading styled as body text</h2>
+<article class="oag-card oag-heading-as-body bg-light">
+	<div class="mb-3">
+		<span class="label label-default">News Release</span>
+		<time datetime="2025-03-18">April 18, 2025</time>
+	</div>
+	<h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+	<a href="#" class="pull-right stretched-link btn btn-link ml-auto mt-auto">Read more &rarr;</a>
+</article>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;article class="oag-card oag-heading-as-body bg-light">
+	&lt;div class="mb-3">
+		&lt;span class="label label-default">News Release&lt;/span>
+		&lt;time datetime="2025-03-18">April 18, 2025&lt;/time>
+	&lt;/div>
+	&lt;h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.&lt;/h3>
+	&lt;a href="#" class="pull-right stretched-link btn btn-link ml-auto mt-auto">Read more &rarr;&lt;/a>
+&lt;/article></code></pre>
+</details>
+
+<h2>Card with image on the top</h2>
+<div class="row wb-eqht-grd">
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<article class="oag-card bg-light oag-heading-as-body">
+			<img src="https://dummyimage.com/500x300" alt="media icon">
+			<div class="mb-2"><span class="label label-default">Media Inquiries</span></div>
+			<h3><a href="#" class="stretched-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</a></h3>
+		</article>
+	</div>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;article class="oag-card bg-light oag-heading-as-body">
+		&lt;img src="https://dummyimage.com/500x300" alt="media icon">
+		&lt;div class="mb-2">&lt;span class="label label-default">Media Inquiries&lt;/span>&lt;/div>
+		&lt;h3>&lt;a href="#" class="stretched-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.&lt;/a>&lt;/h3>
+	&lt;/article></code></pre>
+</details>
+
+<h2>Card with image on the left side</h2>
+<div class="row">
+	<div class="col-sm-6">
+		<article class="oag-card bg-light">
+			<div class="media">
+				<div class="media-left">
+					<a href="#" class="stretched-link"><img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm"></a>
+				</div>
+				<div class="media-body pl-2">
+					<h3 class="6">Public Inquiries</h3>
+					<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
+				</div>
+			</div>
+		</article>
+	</div>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;article class="oag-card bg-light">
+	&lt;div class="media">
+		&lt;div class="media-left">
+			&lt;a href="#" class="stretched-link">&lt;img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm">&lt;/a>
+		&lt;/div>
+		&lt;div class="media-body pl-2">
+			&lt;h3 class="h6">Public Inquiries&lt;/h3>
+			&lt;p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.&lt;/p>
+		&lt;/div>
+	&lt;/div>
+&lt;/article></code></pre>
+</details>
+
+<h2 id="pagination">Pagination</h2>
+<ul class="wb-paginate provisional">
+	<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, at!</li>
+	<li>Soluta maiores deserunt fugit dolorum ratione cum necessitatibus dolore ipsum?</li>
+	<li>Libero debitis dicta porro modi nobis odit labore dolor eveniet.</li>
+	<li>Corrupti est quos ad vero. Hic repellendus numquam officia beatae.</li>
+	<li>Amet ullam, ipsam adipisci ad nisi facere veritatis fuga pariatur?</li>
+	<li>Eum ipsum doloribus nisi natus dolorum maxime omnis, mollitia hic!</li>
+	<li>Aperiam odit, sapiente cum modi amet labore iste dolorum minima.</li>
+	<li>Sunt praesentium voluptatibus aliquid cumque quae eaque aspernatur incidunt sint?</li>
+	<li>Quae illo veritatis deserunt optio corporis repellendus! Qui, deleniti suscipit?</li>
+	<li>Expedita quae temporibus ex labore ipsa excepturi inventore deleniti magnam!</li>
+	<li>Facere reprehenderit natus voluptatibus perspiciatis. Ipsam id quam facilis maxime?</li>
+	<li>Provident assumenda fugiat, nulla temporibus accusantium incidunt laudantium ea consequuntur!</li>
+	<li>Nulla, non aspernatur ipsam provident libero ratione corrupti necessitatibus dicta.</li>
+	<li>Possimus minus autem voluptate suscipit porro non culpa officiis doloribus?</li>
+	<li>Alias modi eius repudiandae natus molestiae ad, unde aliquid praesentium.</li>
+	<li>Ut incidunt corporis quos vel accusantium non assumenda dolorum vitae?</li>
+	<li>Velit magnam laudantium expedita recusandae similique voluptates est, doloribus odit!</li>
+	<li>Officia quasi non, ex dolore fuga reiciendis unde alias blanditiis!</li>
+	<li>Repellendus, libero sint at nam tempore blanditiis recusandae ipsa cupiditate?</li>
+	<li>Maiores exercitationem ipsa fuga accusamus impedit dolorum cum voluptatum alias.</li>
+	<li>Nulla blanditiis ut ipsa nesciunt officiis error quisquam, reprehenderit quam!</li>
+	<li>Libero sint optio sunt beatae ex, quibusdam autem dignissimos et?</li>
+	<li>Mollitia cum tenetur sed blanditiis unde sint tempore quaerat ratione?</li>
+	<li>Optio dicta harum placeat tempore dolorem? Temporibus enim libero vel.</li>
+</ul>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;ul class="wb-paginate provisional">
+	&lt;li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, at!&lt;/li>
+	&lt;li>Soluta maiores deserunt fugit dolorum ratione cum necessitatibus dolore ipsum?&lt;/li>
+	&lt;li>Libero debitis dicta porro modi nobis odit labore dolor eveniet.&lt;/li>
+	&lt;li>Corrupti est quos ad vero. Hic repellendus numquam officia beatae.&lt;/li>
+	&lt;li>Amet ullam, ipsam adipisci ad nisi facere veritatis fuga pariatur?&lt;/li>
+	&lt;li>Eum ipsum doloribus nisi natus dolorum maxime omnis, mollitia hic!&lt;/li>
+	&lt;li>Aperiam odit, sapiente cum modi amet labore iste dolorum minima.&lt;/li>
+	...
+&lt;/ul></code></pre>
+</details>
+
+<h2 id="existing-utilities">Existing utilities</h2>
+<h3><code>.lead</code></h3>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <p>Note: the lead class font-size will change depending of the view port: xsmall, small medium and large </p>
-<h3>Code sample</h3>
-<pre><code>&lt;p class="lead"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p></code></pre>
+</details>
 
-<h2>Primary text class</h2>
+<h3><code>.text-primary</code></h3>
 <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<h3>Code sample</h3>
-<pre><code>&lt;p class="text-primary"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p></code></pre>
+</details>
 
-
-<h2>Well class</h2>
-<div class="well">
-	<p>Well - default appearance</p>
+<h3><code>.text-white</code></h3>
+<div class="bg-dark p-4">
+	<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
-<h3>Code sample</h3>
-<pre><code>&lt;div class=&quot;well&quot;&gt;
-	&lt;p&gt;Well - default appearance&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p></code></pre>
+</details>
 
-	
-<h2>Blockquote</h2>
-<blockquote>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</blockquote>
-<p>&mdash; Author<br> Example text</p>
-<h3>Code sample</h3>
-<pre><code>&lt;blockquote&gt;
-	&lt;p&gt;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&mdash; Author&lt;br&gt; Example text&lt;/p&gt;</code></pre>
-	
-	
-<h2>Default panel</h2>
-<section class="panel panel-default">
-	<header class="panel-heading">
-	 <h3 class="panel-title">Panel title</h3>
-	</header>
-	<div class="panel-body">
-	 <p>Panel body</p>
-	</div>
-</section>
-<h3>Code sample</h3>
-<pre><code>&lt;section class=&quot;panel panel-default&quot;&gt;
-	&lt;header class=&quot;panel-heading&quot;&gt;
-		&lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
-	&lt;/header&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		&lt;p&gt;Panel body&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/section&gt;</code></pre>
+<h3><code>.fnt-hdng</code></h3>
+<p class="fnt-hdng">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita reiciendis nobis ipsum?</p>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;p class="fnt-hdng">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita reiciendis nobis ipsum?&lt;/p></code></pre>
+</details>
 
-<h2>Services and information: 3 columns pattern</h2>
-<section class="gc-srvinfo">
-	<h2>Services and information</h2>
-	<div class="wb-eqht row">
-		<div class="col-md-6 col-lg-4">
-			<h3><a href="#">[Hyperlink text]</a></h3>
-			<p>Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to</p>
-		</div>
-		<div class="col-md-6 col-lg-4">
-			<h3><a href="#">[Hyperlink text]</a></h3>
-			<p>Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to</p>
-		</div>
-		<div class="col-md-6 col-lg-4">
-			<h3><a href="#">[Hyperlink text]</a></h3>
-			<p>Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to</p>
-		</div>	
-	</div>
-</section>
-<h3>Code</h3>
-<pre><code>&lt;section class="gc-srvinfo"&gt;
-	&lt;h2&gt;Services and information&lt;/h2&gt;
-		&lt;div class="wb-eqht row"&gt;
-		&lt;div class="col-md-6 col-lg-4"&gt;
-			&lt;h3&gt;&lt;a href="#"&gt;[Hyperlink text]&lt;/a&gt;&lt;/h3&gt;
-			&lt;p&gt;Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="col-md-6 col-lg-4"&gt;
-			&lt;h3&gt;&lt;a href="#"&gt;[Hyperlink text]&lt;/a&gt;&lt;/h3&gt;
-			&lt;p&gt;Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="col-md-6 col-lg-4"&gt;
-			&lt;h3&gt;&lt;a href="#"&gt;[Hyperlink text]&lt;/a&gt;&lt;/h3&gt;
-			&lt;p&gt;Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to&lt;/p&gt;
-		&lt;/div&gt;	
-	&lt;/div&gt;
-&lt;/section&gt;</code></pre>
+<h3><code>.bg-light</code></h3>
+<div class="bg-light p-4"></div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="bg-light p-4">&lt;/div></code></pre>
+</details>
+
+<h2 id="oag-utilities">OAG specific utilities</h2>
+<h3><code>.oag-rds</code></h3>
+<div class="bg-light oag-rds p-4">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="bg-light oag-rds p-4">
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?&lt;/p>
+&lt;/div></code></pre>
+</details>
+
+<h3><code>.oag-rds-sm</code></h3>
+<div class="bg-light oag-rds-sm p-4">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="bg-light oag-rds-sm p-4">
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?&lt;/p>
+&lt;/div></code></pre>
+</details>
+
+<h3><code>.oag-brdr</code></h3>
+<div class="oag-brdr p-4">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="oag-brdr p-4">
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?&lt;/p>
+&lt;/div></code></pre>
+</details>
+
+<h3><code>.oag-shadow</code></h3>
+<div class="bg-light oag-shadow p-4">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
+</div>
+<details class="mt-3">
+	<summary>Code</summary>
+	<pre><code>&lt;div class="bg-light oag-shadow p-4">
+	&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?&lt;/p>
+&lt;/div></code></pre>
+</details>

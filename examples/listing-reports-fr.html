@@ -1,0 +1,127 @@
+---
+title: "Rapports d'audit"
+altLangPage: "listing-reports.html"
+dateModified: "2025-08-15"
+description: "Bureau du Vérificateur général du Canada - Rapports d'audit"
+language: "fr"
+pageclass: "oag-theme"
+layout: default
+---
+
+<section id="filteredReportsList" class="wb-filter wb-tagfilter wb-paginate provisional" data-wb-filter='{
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTemplate": "#searchFilter"
+	}' data-wb-paginate='{
+		"itemsPerPage": 6,
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTarget": "#filteredReportsListPagination"
+	}'>
+	<div class="row mrgn-tp-lg">
+		<div id="searchFilter">
+			<div class="col-xs-12 col-md-4 col-lg-3">
+				<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="md">
+					<summary><h2>Filtres</h2></summary>
+					<div class="form-group">
+						<label for="customSearchUI">Rechercher dans le titre du rapport</label>
+						<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Rechercher...">
+					</div>
+					<!-- Type of reports -->
+					<div class="form-group mrgn-bttm-0">
+						<fieldset>
+							<legend>Type de rapport</legend>
+							<ul class="list-unstyled mb-0">
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__ag_reports"> Rapports du Vérificateur général
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cesd_reports"> Rapports du commissaire à l'environnement et au développement durable
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__nla_reports"> Rapports des assemblées législatives du Nord
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cc_reports"> Rapports des sociétés d'État
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<hr>
+					<!-- Topic -->
+					<div class="form-group mrgn-bttm-0">
+						<label for="topicList">Sujets</label>
+						<select id="topicList" name="topic" class="form-control full-width wb-tagfilter-ctrl">
+							<option value="">Tous</option>
+							<option value="topic__housing">Logement</option>
+							<option value="topic__human_rights">Droits de l'homme</option>
+							<option value="topic__income_security">Sécurité du revenu</option>
+							<option value="topic__information_management">Gestion de l'information</option>
+						</select>
+					</div>
+					<hr>				
+					<div class="form-group mrgn-bttm-0">
+						<label for="releaseYear">Année de sortie</label>
+						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+							<option value="">Toutes</option>
+							<option value="year__2025">2025</option>
+							<option value="year__2024">2024</option>
+							<option value="year__2023">2023</option>
+							<option value="year__2022">2022</option>
+							<option value="year__2021">2021</option>
+						</select>
+					</div>
+				</details>
+				<div class="bg-light p-3 mt-3 small">
+					<h2 class="mt-0 h6">Rapports plus anciens</h2>
+					<p>Pour consulter les rapports publiés il y a plus de 5 ans, veuillez consulter le <a href="https://canada.ca">site des publications du gouvernement du Canada</a>.</p>
+				</div>
+			</div>
+
+			<!-- Reports listing -->
+			<div class="col-xs-12 col-md-8 col-lg-9">
+				<h2 class="wb-inv">Liste de rapports d'audit</h2>
+				<div class="d-flex mb-2">
+					<p class="wb-fltr-info ml-auto">
+						<span class="text-muted"><span data-nbitem></span> résultats</span>
+					</p>
+				</div>
+				<div class="row wb-eqht-grd hght-inhrt reports-list wb-tagfilter-items" data-wb-json='{
+						"url": "reports_fr.json#/events",
+						"mapping": [
+							
+							{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
+							{ "selector": ".label", "attr": "data-report-type", "value": "/type" },
+							{ "selector": ".report-type", "value": "/type" },
+							{ "selector": "h3 a", "value": "/title" }
+						]
+					}'>
+					<template>
+						<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
+							<article class="oag-card oag-heading-as-body bg-light h-100">
+								<img src="https://dummyimage.com/300x300" alt="">
+								<div>
+									<span class="label label-default" data-report-type="">Rapport du <span class="report-type"></span></span>
+								</div>
+								<h3 class="mb-0 mt-2"><a href="audit-report-fr.html" class="stretched-link mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</a></h3>
+							</article>
+						</div>
+					</template>
+					
+				</div>
+				<div class="wb-tagfilter-noresult">
+					<p>Aucun rapport ne correspond à cette combinaison de filtres.</p>
+				</div>			
+				<div id="filteredReportsListPagination"></div>
+			</div>
+		</div>
+	</div>
+</section>

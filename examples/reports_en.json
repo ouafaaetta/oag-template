@@ -1,0 +1,82 @@
+{
+    "events": [
+        {
+            "tags": "type__ag_reports year__2025 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2025",
+            "type": "AG"
+        },
+        {
+            "tags": "type__cesd_reports year__2025 topic__income_security",
+            "title": "Lessons Learned from Canada's Record on Sustainable Development",
+            "year":"2025",
+            "type": "CESD"
+        },
+        {
+            "tags": "type__nla_reports year__2024 topic__income_security",
+            "title": "Child and Family Services",
+            "year":"2024",
+            "type": "NLA"
+        },
+        {
+            "tags": "type__nla_reports year__2023 topic__income_security",
+            "title": "Child and Family Services",
+            "year":"2023",
+            "type": "NLA"
+        },
+        {
+            "tags": "type__nla_reports year__2023 topic__income_security",
+            "title": "Child and Family Services",
+            "year":"2023",
+            "type": "NLA"
+        },
+        {
+            "tags": "type__cesd_reports year__2025 topic__income_security",
+            "title": "Lesons Learned from Canada's Record on Sustainable Development",
+            "year":"2024",
+            "type": "CESD"
+        },
+        {
+            "tags": "type__cesd_reports year__2025 topic__information_management",
+            "title": "Lessons Learned from Canada's Record on Sustainable Development",
+            "year":"2025",
+            "type": "CESD"
+        },
+        {
+            "tags": "type__cesd_reports year__2025 topic__information_management",
+            "title": "Lessons Learned from Canada's Record on Sustainable Development",
+            "year":"2025",
+            "type": "CESD"
+        },
+        {
+            "tags": "type__ag_reports year__2022 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2022",
+            "type": "AG"
+        },
+        {
+            "tags": "type__ag_reports year__2021 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2021",
+            "type": "AG"
+        },
+        {
+            "tags": "type__ag_reports year__2020 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2020",
+            "type": "AG"
+        },
+        {
+            "tags": "type__ag_reports year__2022 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2022",
+            "type": "AG"
+        },
+        {
+            "tags": "type__ag_reports year__2023 topic__housing",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2023",
+            "type": "AG"
+        }
+    ]
+}
