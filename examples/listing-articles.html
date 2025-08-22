@@ -1,0 +1,187 @@
+---
+title: "News Listing"
+altLangPage: "listing-news-fr.html"
+dateModified: "2025-08-08"
+description: "Office of the Auditor General of Canada - News listing page"
+language: "en"
+pageclass: "oag-theme wb-prettify all-pre"
+layout: no-container
+---
+<div class="container">
+	<h1 property="name" id="wb-cont" class="mt-0">News</h1>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+
+	<div class="row wb-eqht-grd py-4">
+		<div class="col-xs-12 col-lg-4">
+			<div class="oag-brdr oag-rds p-4 mb-3 hght-inhrt">
+				<h2 class="mt-0 mt-lg-4">Media Relations</h2>
+				<p class="mb-3"><a href="mailto:infomedia@oag-bvg.gc.ca">infomedia@oag-bvg.gc.ca</a></p>
+				<p class="mb-3"><a href="tel:+18887615953">1-888-761-5953</a></p>
+				<p class="mb-3">8:30am–4:30pm <abbr title="Eastern Standard Time">ET</abbr> Mon–Fri</p>
+				<p class="mb-3">If you are not a journalist, please contact <a href="/internet/English/admin_e_43119.html">Inquiries</a>.</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-8">
+			<div class="row wb-eqht-grd">
+				<div class="col-xs-12 col-md-6">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="listing-reports.html" class="stretched-link">Latest Reports</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="listing-reports.html" class="stretched-link">Upcoming Reports</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Media Inquiries</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<article class="oag-card bg-light h-100">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://dummyimage.com/80x80" alt="media icon" class="oag-rds-sm">
+							</div>
+							<div class="media-body pl-2">
+								<h3 class="h6"><a href="#" class="stretched-link">Resources</a></h3>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer id est vitae magna.</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="filteredReportsList" class="wb-filter wb-tagfilter wb-paginate provisional" data-wb-filter='{
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTemplate": "#searchFilter"
+	}' data-wb-paginate='{
+		"itemsPerPage": 6,
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTarget": "#filteredReportsListPagination"
+	}'>
+
+		<div class="row mrgn-tp-lg">
+			<div id="searchFilter">
+				<div class="col-xs-12 col-md-4 col-lg-3">
+					<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="sm">
+						<summary>
+							<h2>Filter results</h2>
+						</summary>
+						<div class="form-group">
+							<label for="customSearchUI">Search Article Title</label>
+							<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Search...">
+						</div>
+						<!-- Type of articles -->
+						<div class="form-group mrgn-bttm-0">
+							<fieldset>
+								<legend>Type of Article</legend>
+								<ul class="list-unstyled mb-0">
+									<li class="checkbox">
+										<label>
+											<input type="checkbox" name="article_type" class="wb-tagfilter-ctrl" value="type__media_advisory"> Media Advisory
+										</label>
+									</li>
+									<li class="checkbox">
+										<label>
+											<input type="checkbox" name="article_type" class="wb-tagfilter-ctrl" value="type__news_release"> News Release
+										</label>
+									</li>
+									<li class="checkbox">
+										<label>
+											<input type="checkbox" name="article_type" class="wb-tagfilter-ctrl" value="type__crown_corporation_reports"> Opening Statement
+										</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<hr>
+						<!-- Topic -->
+						<div class="form-group">
+							<label for="topicList">Report type</label>
+							<select id="topicList" name="report_type" class="form-control full-width wb-tagfilter-ctrl">
+								<option value="">All</option>
+								<option value="type__auditor_general_reports">Auditor General Reports</option>
+								<option value="type__commissioner">Commissioner of the Environment and Sustainable Development Reports</option>
+								<option value="type__northern_legislative_assemblies_reports">Northern Legislative Assemblies Reports</option>
+								<option value="topic__information_management">Crown Corporation Reports</option>
+							</select>
+						</div>
+						<div class="form-group mrgn-bttm-0">
+							<label for="releaseYear">Release Year</label>
+							<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+								<option value="">All</option>
+								<option value="year__2025">2025</option>
+								<option value="year__2024">2024</option>
+								<option value="year__2023">2023</option>
+								<option value="year__2022">2022</option>
+								<option value="year__2021">2021</option>
+							</select>
+						</div>
+					</details>
+				</div>
+
+				<!-- Reports listing -->
+				<div class="col-xs-12 col-md-8 col-lg-9">
+					<p class="wb-fltr-info text-right"><span class="text-muted"><span data-nbitem></span> Results</span></p>
+					<div class="row wb-eqht-grd reports-list wb-tagfilter-items" data-wb-json='{
+						"url": "articles_en.json#/events",
+						"mapping": [
+							
+							{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
+							{ "selector": ".article-type", "value": "/type" },
+							{ "selector": "time", "value": "/date" },
+							{ "selector": "time", "attr": "datetime", "value": "/date" }
+						]
+					}'>
+						<template>
+							<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
+								<article class="oag-card bg-light h-100 oag-heading-as-body">
+									<div class="mb-3">
+										<span class="label label-default article-type"></span>
+										<time datetime="" class="small"><span></span></time>
+									</div>
+									<h3><a href="article.html" class="stretched-link mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+								</article>
+							</div>
+						</template>
+
+					</div>
+					<div class="wb-tagfilter-noresult">
+						<p>No item match this combination of filters.</p>
+					</div>
+					<div id="filteredReportsListPagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
