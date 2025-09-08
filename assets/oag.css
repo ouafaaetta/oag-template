@@ -68,7 +68,7 @@
 		}
 
 		&[open] > summary {
-			margin-bottom: .75em;
+			margin-bottom: .75em!important;
 		}
 	}
 
@@ -416,7 +416,9 @@
 
 			details[open]{
 				border: none;
-				padding: 15px;
+				.tgl-panel {
+					padding: 0 15px;
+				}
 			}
 		}
 	}
@@ -719,6 +721,21 @@
 		}
 	}
 	
+	
+	/**********
+	For compatibility with MWSW limitations
+	**********/
+	.title:has(h1) ~ .image {
+		margin-bottom: 30px;
+	}
+	.mwsbutton:has(.btn-block) + .download-link, .mwsbutton:has(.btn-block){
+		margin-bottom: 20px;
+	}
+
+	div:not(.cmp-container):has(.tabbed-interface) {
+		margin-top: 30px;
+	}
+
 	/**********
 		Extra-small screens
 	**********/
