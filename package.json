@@ -1,6 +1,6 @@
 {
 	"name": "oag-template",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "OAG template using GCWeb-Jekyll",
 	"main": "index.html",	
 	"devDependencies": {
