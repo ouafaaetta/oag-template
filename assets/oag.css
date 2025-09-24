@@ -239,12 +239,15 @@
 	h2, .h2 {
 		color: var(--oag-body-color);
 	}
-
+	
 	h1#wb-cont, hgroup#wb-cont h1 {
 		border: none;
 		padding-bottom: 0;
 		margin-bottom: 30px;
 		max-width: 33ch;
+	}
+	h1#wb-cont {
+		margin-bottom: 60px;	
 	}	
 
 	/**********
@@ -473,6 +476,7 @@
 
 		h3.h6 {	
 			font-family: var(--oag-heading-font);
+			font-weight: 500;
 			color: var(--oag-primary-color);
 		}
 

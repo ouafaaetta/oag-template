@@ -28,12 +28,12 @@ layout: no-container
 			"section": ".petitions-list",
 			"uiTemplate": "#searchFilter"
 		}' data-wb-paginate='{
-			"itemsPerPage": 6,
+			"itemsPerPage": 20,
 			"selector": ".listing-petition",
 			"section": ".petitions-list",
 			"uiTarget": "#filteredPetitionsListPagination"
 		}'>
-		<div class="row mrgn-tp-lg">
+		<div class="row mt-4">
 			<div id="searchFilter">
 				<div class="col-xs-12 col-md-4 col-lg-3 mb-3">
 					<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="sm">
@@ -43,20 +43,20 @@ layout: no-container
 							<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredPetitionsList" aria-controls="filteredPetitionsList" placeholder="Search...">
 						</div>
 						<hr>
-						<!-- Date -->
+
+						<!-- Petition Year -->
 						<div class="form-group">
-							<label for="petitionDate">Date</label>
-							<select id="petitionDate" name="petitionDate" class="form-control full-width wb-tagfilter-ctrl" data-wb-json='{
-								"url": "petitions_en.json#/events",
-								"mapping": [								
-									{ "selector": "option", "attr": "value", "value": "/date" },
-									{ "selector": "option", "value": "/date" }]}'>
-								<option value="">All</option>								
-								<template>
-									<option value=""></option>
-								</template>
-							</select>
+						<label for="petitionYear">Year</label>
+						<select id="petitionYear" name="petitionYear" class="form-control full-width wb-tagfilter-ctrl" >
+							<option value="">All</option>
+							<option value="year__2025">2025</option>
+							<option value="year__2024">2024</option>
+							<option value="year__2023">2023</option>
+							<option value="year__2022">2022</option>
+							<option value="year__2021">2021</option>
+						</select>
 						</div>
+
 						<!-- Federal Organization -->
 						<div class="form-group">
 							<label for="federalOrganization">Federal Organization</label>
@@ -114,7 +114,9 @@ layout: no-container
 				</div>
 
 				<!-- Petition listing -->
-				<div class="col-xs-12 col-md-8 col-lg-9">					
+				<div class="col-xs-12 col-md-8 col-lg-9">
+					<h2 class="wb-inv">List of petition results</h2>
+					
 					<p class="wb-fltr-info text-right">
 						<span class="text-muted"><span data-nbitem></span> Results</span>
 					</p>
@@ -126,17 +128,17 @@ layout: no-container
 								{ "selector": "h3 a", "placeholder": "[[ID]]", "value": "/id" },
 								{ "selector": "h3 a", "placeholder": "[[TITLE]]", "value": "/title" },
 								{ "selector": "p", "value": "/content" },
-								{ "selector": "datetime", "value": "/date" },
-								{ "selector": "datetime", "attr": "datetime", "value": "/date" }
+								{ "selector": "time", "attr": "datetime", "value": "/date-ISO" },
+								{ "selector": "time", "value": "/date" }
 							]
 						}'>
 
 						<template>
 							<article class="listing-petition mb-3 px-3 brdr-tp" data-wb-tags="">									
-									<h3 class="h4"><a href="petition.html" class="no-undrln">[[ID]] - [[TITLE]]</a></h3>
-									<p></p>
-									<datetime datetime="" class="small text-muted"><span></span></datetime>									
-								</article>
+								<h3 class="h4"><a href="petition.html" class="no-undrln">[[ID]] - [[TITLE]]</a></h3>
+								<p></p>
+								<time datetime="" class="small text-muted"><span></span></time>									
+							</article>
 						</template>
 						
 					</div>

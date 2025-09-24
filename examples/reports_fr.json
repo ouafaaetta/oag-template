@@ -1,79 +1,79 @@
 {
     "events": [
         {
-            "tags": "type__ag_reports year__2025 topic__housing",
+            "tags": "type__ag_reports year__2025 topic__housing institution-1",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2025",
             "type": "AG"
         },
         {
             "tags": "type__cesd_reports year__2025 topic__income_security",
-            "title": "Leçons tirées du bilan du Canada en matière de développement durable",
+            "title": "Leçons tirées du bilan du Canada en matière de développement durable institution-1",
             "year": "2025",
             "type": "CEDD"
         },
         {
-            "tags": "type__nla_reports year__2024 topic__income_security",
+            "tags": "type__nla_reports year__2024 topic__income_security institution-2",
             "title": "Services à l'enfance et à la famille",
             "year": "2024",
             "type": "NLA"
         },
         {
-            "tags": "type__nla_reports year__2023 topic__income_security",
+            "tags": "type__nla_reports year__2023 topic__income_security institution-2",
             "title": "Services à l'enfance et à la famille",
             "year": "2023",
             "type": "NLA"
         },
         {
-            "tags": "type__nla_reports year__2023 topic__income_security",
+            "tags": "type__nla_reports year__2023 topic__income_security institution-3",
             "title": "Services à l'enfance et à la famille",
             "year": "2023",
             "type": "NLA"
         },
         {
-            "tags": "type__cesd_reports year__2025 topic__income_security",
+            "tags": "type__cesd_reports year__2025 topic__income_security institution-3",
             "title": "Leçons tirées du bilan du Canada en matière de développement durable",
             "year": "2024",
             "type": "CEDD"
         },
         {
-            "tags": "type__cesd_reports year__2025 topic__information_management",
+            "tags": "type__cesd_reports year__2025 topic__information_management institution-4",
             "title": "Leçons tirées du bilan du Canada en matière de développement durable",
             "year": "2025",
             "type": "CEDD"
         },
         {
-            "tags": "type__cesd_reports year__2025 topic__information_management",
+            "tags": "type__cesd_reports year__2025 topic__information_management institution-4",
             "title": "Leçons tirées du bilan du Canada en matière de développement durable Bilan du Canada en matière de développement durable",
             "year": "2025",
             "type": "CEDD"
         },
         {
-            "tags": "type__ag_reports year__2022 topic__housing",
+            "tags": "type__ag_reports year__2022 topic__housing institution-5",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2022",
             "type": "AG"
         },
         {
-            "tags": "type__ag_reports year__2021 topic__housing",
+            "tags": "type__ag_reports year__2021 topic__housing institution-5",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2021",
             "type": "AG"
         },
         {
-            "tags": "type__ag_reports year__2020 topic__housing",
+            "tags": "type__ag_reports year__2020 topic__housing institution-1",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2020",
             "type": "AG"
         },
         {
-            "tags": "type__ag_reports year__2022 topic__housing",
+            "tags": "type__ag_reports year__2022 topic__housing institution-2",
             "title": "Logements pour les Forces armées canadiennes",
             "year": "2022",
             "type": "AG"
         },
         {
-            "tags": "type__ag_reports year__2023 topic__housing",
+            "tags": "type__ag_reports year__2023 topic__housing institution-3",
             "title": "Logements pour les Forces armées canadiennes",
             "year": "2023",
             "type": "AG"

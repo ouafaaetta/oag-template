@@ -1,107 +1,129 @@
 {
     "events": [
         {
-            "tags": "QC fed_org__org_1  2025-06-27 topic__housing id__515",
+            "tags": "QC fed_org__org_1  year__2025 topic__housing id__515",
             "fed_org": "Organization 1",
             "id": "515",
             "title": "Housing for Canadian Armed Forces",
             "date": "June 27, 2025",
+            "date-ISO": "2025-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "QC fed_org__org_2  2025-06-26 topic__income_security id__516",
+            "tags": "QC fed_org__org_2  year__2022 topic__income_security id__516",
             "fed_org": "Organization 2",
             "id": "516",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
-            "date": "June 26, 2025",
+            "date": "June 26, 2022",
+            "date-ISO": "2022-06-26",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "ON fed_org__org_3  2024-05-20 topic__income_security id__517",
+            "tags": "ON fed_org__org_3 year__2021 topic__income_security id__517",
             "fed_org": "Organization 3",
             "id": "517",
             "title": "Child and Family Services",
-            "date": "May 20, 2024",
+            "date": "May 20, 2021",
+            "date-ISO": "2021-05-20",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "ON fed_org__org_1  2023-01-01 topic__income_security id__518",
+            "tags": "ON fed_org__org_1  year__2021 topic__income_security id__518",
             "fed_org": "Organization 1",
             "id": "518",
             "title": "Child and Family Services",
-            "date": "January 01, 2023",
+            "date": "January 01, 2021",
+            "date-ISO": "2021-01-01",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "ON fed_org__org_4  2023-03-22 topic__income_security id__519",
+            "tags": "ON fed_org__org_4  year__2024 topic__income_security id__519",
             "fed_org": "Organization 4",
             "id": "519",
             "title": "Child and Family Services",
-            "date": "March 22, 2023",
+            "date": "March 22, 2024",
+            "date-ISO": "2024-03-22",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "MB fed_org__org_5  2025-06-27 topic__income_security id__520 ",
+            "tags": "MB fed_org__org_5  year__2025 topic__income_security id__520 ",
             "fed_org": "Organization 5",
             "id": "520",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
-            "date": "June 27, 2024",
+            "date": "June 27, 2025",
+            "date-ISO": "2025-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "MB fed_org__org_5  2020-11-11 topic__information_management id__521",
+            "tags": "MB fed_org__org_5  year__2024 topic__information_management id__521",
             "fed_org": "Organization 5",
             "id": "521",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
-            "date": "November 11, 2020",
+            "date": "November 11, 2024",
+            "date-ISO": "2024-11-11",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "NB fed_org__org_3  2025-06-27 topic__information_management id__522",
+            "tags": "NB fed_org__org_3  year__2025 topic__information_management id__522",
             "fed_org": "Organization 3",
             "id": "522",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "date": "June 27, 2025",
+            "date-ISO": "2025-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "NB fed_org__org_1  2022-06-27 topic__housing id__523",
+            "tags": "NB fed_org__org_1  year__2024 topic__housing id__523",
             "fed_org": "Organization 1",
             "id": "523",
             "title": "Housing for Canadian Armed Forces",
-            "date": "June 27, 2022",
+            "date": "June 27, 2024",
+            "date-ISO": "2024-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "SK fed_org__org_2  2021-06-27 topic__housing id__524",
+            "tags": "SK fed_org__org_2  year__2023 topic__housing id__524",
             "fed_org": "Organization 2",
             "id": "524",
             "title": "Housing for Canadian Armed Forces",
-            "date": "June 27, 2021",
+            "date": "June 27, 2023",
+            "date-ISO": "2023-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "SK fed_org__org_1  2020-06-27 topic__housing id__525",
+            "tags": "SK fed_org__org_1  year__2020 topic__housing id__525",
             "fed_org": "Organization 1",
             "id": "525",
             "title": "Housing for Canadian Armed Forces",
             "date": "June 27, 2020",
+            "date-ISO": "2020-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "NS fed_org__org_2  2022-06-27 topic__housing id__527",
+            "tags": "NS fed_org__org_2  year__2022 topic__housing id__527",
             "fed_org": "Organization 2",
             "id": "527",
             "title": "Housing for Canadian Armed Forces",
             "date": "June 27, 2022",
+            "date-ISO": "2022-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "tags": "NS fed_org__org_2  2023-06-27 topic__housing id__526",
+            "tags": "NS fed_org__org_2  year__2023 topic__housing id__526",
             "fed_org": "Organization 2",
             "id": "526",
             "title": "Housing for Canadian Armed Forces",
             "date": "June 27, 2023",
+            "date-ISO": "2023-06-27",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "tags": "NS fed_org__org_2  year__2025 topic__housing id__528",
+            "fed_org": "Organization 2",
+            "id": "528",
+            "title": "Housing for Canadian Armed Forces",
+            "date": "June 27, 2025",
+            "date-ISO": "2025-06-27",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
     ]

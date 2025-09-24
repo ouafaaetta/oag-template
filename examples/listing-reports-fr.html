@@ -13,12 +13,12 @@ layout: default
 		"section": ".reports-list",
 		"uiTemplate": "#searchFilter"
 	}' data-wb-paginate='{
-		"itemsPerPage": 6,
+		"itemsPerPage": 20,
 		"selector": ".listing-card",
 		"section": ".reports-list",
 		"uiTarget": "#filteredReportsListPagination"
 	}'>
-	<div class="row mrgn-tp-lg">
+	<div class="row mt-4">
 		<div id="searchFilter">
 			<div class="col-xs-12 col-md-4 col-lg-3">
 				<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="sm">
@@ -28,7 +28,7 @@ layout: default
 						<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Rechercher...">
 					</div>
 					<!-- Type of reports -->
-					<div class="form-group mrgn-bttm-0">
+					<div class="form-group mb-0">
 						<fieldset>
 							<legend>Type de rapport</legend>
 							<ul class="list-unstyled mb-0">
@@ -57,7 +57,7 @@ layout: default
 					</div>
 					<hr>
 					<!-- Topic -->
-					<div class="form-group mrgn-bttm-0">
+					<div class="form-group mb-0">
 						<label for="topicList">Sujets</label>
 						<select id="topicList" name="topic" class="form-control full-width wb-tagfilter-ctrl">
 							<option value="">Tous</option>
@@ -67,8 +67,7 @@ layout: default
 							<option value="topic__information_management">Gestion de l'information</option>
 						</select>
 					</div>
-					<hr>				
-					<div class="form-group mrgn-bttm-0">
+					<div class="form-group mb-0 mt-3">
 						<label for="releaseYear">Année de sortie</label>
 						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
 							<option value="">Toutes</option>
@@ -77,6 +76,17 @@ layout: default
 							<option value="year__2023">2023</option>
 							<option value="year__2022">2022</option>
 							<option value="year__2021">2021</option>
+						</select>
+					</div>
+					<div class="form-group mb-0 mt-3">
+						<label for="federalOrganization">Institution fédérale</label>
+						<select id="federalOrganization" name="federalOrganization" class="form-control full-width wb-tagfilter-ctrl">
+							<option value="">Toutes</option>
+							<option value="institution-1">Institution 1</option>
+							<option value="institution-2">Institution 2</option>
+							<option value="institution-3">Institution 3</option>
+							<option value="institution-4">Institution 4</option>
+							<option value="institution-5">Institution 5</option>
 						</select>
 					</div>
 				</details>

@@ -15,9 +15,10 @@ if (reportTypeLabel && reportHeading) {
 	hgroup.id = 'wb-cont';
 
 	// Create paragraph with label
-	const p = document.createElement('p');
-	const span = document.createElement('span');
+	const p = document.createElement('p'),
+		span = document.createElement('span');
 	span.className = 'label label-primary';
+	p.className = 'mb-4'; // Use mb-4 for margin-bottom
 	span.textContent = reportTypeLabel.textContent;
 	p.appendChild(span);
 

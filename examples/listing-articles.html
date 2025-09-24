@@ -84,16 +84,16 @@ layout: no-container
 		"section": ".reports-list",
 		"uiTemplate": "#searchFilter"
 	}' data-wb-paginate='{
-		"itemsPerPage": 6,
+		"itemsPerPage": 20,
 		"selector": ".listing-card",
 		"section": ".reports-list",
 		"uiTarget": "#filteredReportsListPagination"
 	}'>
 
-		<div class="row mrgn-tp-lg">
+		<div class="row mt-4">
 			<div id="searchFilter">
 				<div class="col-xs-12 col-md-4 col-lg-3">
-					<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="sm">
+					<details open class="oag-filter-options provisional wb-details-close mb-4 pb-4" data-breakpoint="sm">
 						<summary>
 							<h2>Filter results</h2>
 						</summary>
@@ -102,7 +102,7 @@ layout: no-container
 							<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Search...">
 						</div>
 						<!-- Type of articles -->
-						<div class="form-group mrgn-bttm-0">
+						<div class="form-group mb-0">
 							<fieldset>
 								<legend>Type of Article</legend>
 								<ul class="list-unstyled mb-0">
@@ -118,7 +118,7 @@ layout: no-container
 									</li>
 									<li class="checkbox">
 										<label>
-											<input type="checkbox" name="article_type" class="wb-tagfilter-ctrl" value="type__crown_corporation_reports"> Opening Statement
+											<input type="checkbox" name="article_type" class="wb-tagfilter-ctrl" value="type__opening_statement"> Opening Statement
 										</label>
 									</li>
 								</ul>
@@ -130,13 +130,13 @@ layout: no-container
 							<label for="topicList">Report type</label>
 							<select id="topicList" name="report_type" class="form-control full-width wb-tagfilter-ctrl">
 								<option value="">All</option>
-								<option value="type__auditor_general_reports">Auditor General Reports</option>
-								<option value="type__commissioner">Commissioner of the Environment and Sustainable Development Reports</option>
-								<option value="type__northern_legislative_assemblies_reports">Northern Legislative Assemblies Reports</option>
-								<option value="topic__information_management">Crown Corporation Reports</option>
+								<option value="topic__auditor_general_reports">Auditor General Reports</option>
+								<option value="topic__commissioner">Commissioner of the Environment and Sustainable Development Reports</option>
+								<option value="topic__northern_legislative_assemblies_reports">Northern Legislative Assemblies Reports</option>
+								<option value="topic__crown_corporations">Special Examinations of Crown Corporations</option>
 							</select>
 						</div>
-						<div class="form-group mrgn-bttm-0">
+						<div class="form-group mb-0">
 							<label for="releaseYear">Release Year</label>
 							<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
 								<option value="">All</option>
@@ -167,14 +167,13 @@ layout: no-container
 							<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
 								<article class="oag-card bg-light h-100 oag-heading-as-body">
 									<div class="mb-3">
-										<span class="label label-default article-type"></span>
+										<span class="label label-primary article-type"></span>
 										<time datetime="" class="small"><span></span></time>
 									</div>
 									<h3><a href="article.html" class="stretched-link mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
 								</article>
 							</div>
 						</template>
-
 					</div>
 					<div class="wb-tagfilter-noresult">
 						<p>No item match this combination of filters.</p>
